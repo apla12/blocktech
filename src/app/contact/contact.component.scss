@@ -1,0 +1,166 @@
+.contact {
+  background-color: #363a43;
+  height          : auto;
+}
+
+.bg-one {
+  background-color: #363a43;
+}
+
+.color {
+  color: #eb6516;
+}
+
+.border {
+  border-top: 2px solid #666666;
+  height    : 1px;
+  margin    : 15px auto 0;
+  position  : relative;
+  width     : 30%;
+  border    : 1px solid #dee2e6 !important;
+}
+
+.border:before {
+  content         : "";
+  height          : 6px;
+  left            : 50%;
+  margin-left     : -20px;
+  position        : absolute;
+  top             : -4px;
+  width           : 50px;
+  background-color: #eb6516;
+}
+
+.title {
+  padding-top   : 60px;
+  padding-bottom: 60px;
+}
+
+.title h2 {
+  text-transform: capitalize;
+  font-weight   : 700;
+  font-size     : 38px;
+  color         : #fff;
+}
+
+.title h2 span {
+  color: #eb6516;
+}
+
+.title p {
+  color: #666;
+}
+
+.title.title-white h2 {
+  color: #fff;
+}
+
+
+.call-to-action {
+  background-attachment: fixed;
+  height               : 300px;
+}
+
+.call-to-action h2 {
+  font-weight: 700;
+  color      : #ffffff;
+}
+
+.call-to-action p {
+  font-size: 16px;
+  color    : #ffffff;
+}
+
+.section-sm {
+  padding: 70px 0;
+}
+
+.bg-1 {
+  background-image : url("../../assets/img/banner2.png");
+  background-repeat: no-repeat;
+  background-size  : cover;
+  opacity          : 0.8;
+}
+
+.contact-info {
+  color        : #afbac4;
+  margin-bottom: 25px;
+}
+
+.con-info {
+  margin-bottom: 20px;
+}
+
+.con-info i,
+.con-info span {
+  float: left;
+}
+
+.con-info span {
+  margin: -5px 0 0 15px;
+}
+
+.contact-form {
+  margin-bottom: 60px;
+}
+
+.contact-form .form-control {
+  background-color: transparent;
+  border          : 1px solid #666666;
+  height          : 45px;
+  color           : #afbac4;
+}
+
+.contact-form textarea.form-control {
+  padding: 10px;
+  height : 120px;
+  color  : #afbac4;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+#contact-submit:hover {
+  border-color: #eb6516;
+}
+
+#contact-submit {
+  border    : 1px solid #666666;
+  background: #eb6516;
+  padding   : 12px 0;
+  width     : 100%;
+  margin    : 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  color        : #afbac4;
+}
+
+.form-group:last-child,
+.form-group:last-child input {
+  margin: 0;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #afbac4;
+}
+
+
+
+.error {
+  display         : none;
+  padding         : 10px;
+  color           : #D8000C;
+  border-radius   : 4px;
+  font-size       : 13px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius   : 4px;
+  color           : #fff;
+  display         : none;
+  font-size       : 13px;
+  padding         : 10px;
+}

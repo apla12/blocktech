@@ -1,0 +1,246 @@
+ .about {
+   background-color: #363a43;
+   height          : auto;
+ }
+
+ fa-icon{
+  color: #666666;
+ }
+
+ .bg-one {
+   background-color: #353b43;
+ }
+
+ .section {
+   padding: 100px 0;
+ }
+
+ .color {
+   color: #eb6516;
+ }
+
+ .border {
+   border-top: 2px solid rgba(236, 239, 241, 0.07);
+   height    : 1px;
+   margin    : 15px auto 0;
+   position  : relative;
+   width     : 30%;
+   border    : 1px solid #dee2e6 !important;
+ }
+
+ .border:before {
+   content         : "";
+   height          : 6px;
+   left            : 50%;
+   margin-left     : -20px;
+   position        : absolute;
+   top             : -4px;
+   width           : 50px;
+   background-color: #eb6516;
+ }
+
+ .title {
+   padding-bottom: 60px;
+ }
+
+ .title h2 {
+   text-transform: capitalize;
+   font-weight   : 700;
+   font-size     : 38px;
+   color         : #fff;
+ }
+
+ .title h2 span {
+   color: #eb6516;
+ }
+
+ .title p {
+   color: #666;
+ }
+
+ .title.title-white h2 {
+   color: #fff;
+ }
+
+ .about .block {
+   background   : #242930;
+   padding      : 30px;
+   border-bottom: 2px solid transparent;
+   transition   : 0.5s all;
+   margin-bottom: 20px;
+ }
+
+ .about .block:hover {
+   border-bottom: 2px solid #eb6516;
+ }
+
+ .about .block:hover .icon-box {
+   transform: translateY(-10px);
+ }
+
+ .about .block .icon-box {
+   position           : relative;
+   width              : 160px;
+   height             : 92.38px;
+   background-color   : transparent;
+   margin             : 46.19px auto 60px;
+   padding            : 20px 0;
+   border-left        : 2px solid rgba(236, 239, 241, 0.07);
+   border-right       : 2px solid rgba(236, 239, 241, 0.07);
+   font-size          : 50px;
+   transform          : translateZ(0px);
+   transition-duration: 0.3s;
+   transition-property: transform;
+ }
+
+ .about .block .icon-box:after,
+ .about .block .icon-box:before {
+   content         : "";
+   position        : absolute;
+   z-index         : 1;
+   width           : 113.14px;
+   height          : 113.14px;
+   background-color: inherit;
+   left            : 20.4315px;
+   transform       : scaleY(0.5774) rotate(-45deg);
+ }
+
+ .about .block .icon-box:before {
+   top         : -56.5685px;
+   border-top  : 2px solid rgba(236, 239, 241, 0.07);
+   border-right: 2px solid rgba(236, 239, 241, 0.07);
+ }
+
+ .about .block .icon-box:after {
+   bottom       : -56.5685px;
+   border-bottom: 2px solid rgba(236, 239, 241, 0.07);
+   border-left  : 2px solid rgba(236, 239, 241, 0.07);
+ }
+
+ .about .block .icon-box h3 {
+   color: #afbac4;
+ }
+
+ .about-2 .content-block {
+   padding: 35px 40px;
+ }
+
+ .about-2 .content-block .media {
+   margin-top: 25px;
+ }
+
+ .about-2 .content-block .media .pull-left {
+   padding-right: 15px;
+ }
+
+ .about-2 .content-block .media i {
+   font-size: 30px;
+   color    : #eb6516;
+ }
+
+ .about-2 .content-block .media h4 {
+   font-size  : 16px;
+   font-weight: 600;
+ }
+
+ p {
+   margin-top   : 0;
+   margin-bottom: 1rem;
+   color        : #afbac4;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-weight: 400;
+   color      : #afbac4;
+ }
+
+ .call-to-action {
+   background-attachment: fixed;
+ }
+
+ .call-to-action h2 {
+   font-weight: 700;
+   color      : #ffffff;
+ }
+
+ .call-to-action p {
+   font-size: 16px;
+   color    : #ffffff;
+ }
+
+ .call-to-action .btn-main {
+   margin-top: 20px;
+ }
+
+ .section-sm {
+   padding: 70px 0;
+ }
+
+ .bg-1 {
+   background-image : url("../../assets/img/banner.png");
+   background-repeat: no-repeat;
+   background-size  : cover;
+   opacity          : 0.8;
+ }
+
+ .btn {
+   background-color: transparent;
+   color           : #fff;
+   padding         : 10px 30px;
+   border-radius   : 0;
+   transition      : all 0.3s ease-in 0s;
+ }
+
+ .btn:focus {
+   color     : #ddd;
+   box-shadow: none;
+ }
+
+ .btn-transparent {
+   border: 1px solid #4e595f;
+ }
+
+ .btn-transparent:hover,
+ .btn-transparent:focus {
+   background-color: #eb6516;
+   border-color    : #eb6516 !important;
+   color           : #fff;
+ }
+
+ .btn.active:focus,
+ .btn:active:focus,
+ .btn:focus {
+   outline: 0;
+ }
+
+ .btn-main {
+   background    : #eb6516;
+   color         : #fff;
+   display       : inline-block;
+   font-size     : 14px;
+   letter-spacing: 1px;
+   padding       : 10px 35px;
+   text-transform: uppercase;
+ }
+
+ .btn-main:hover {
+   background: #eb6516;
+   color     : #fff;
+ }
+
+
+ /* RESPONSIVE */
+ @media screen and (max-width: 963px) {
+   .section {
+     padding: 50px 0;
+   }
+
+   .about-2 .content-block {
+     padding: 40px 15px;
+   }
+ }

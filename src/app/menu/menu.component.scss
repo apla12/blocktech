@@ -1,0 +1,83 @@
+#header {
+  background-color: #1e2024;
+  overflow        : hidden;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 100%;
+}
+
+.navbar {
+  padding: 15px 0;
+  width  : 100%;
+}
+
+.navbar-brand {
+  width          : 50%;
+  justify-content: left;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo-menu {
+  width: 50%;
+}
+
+h2.logo {
+  font-size  : 28px;
+  font-weight: 400;
+  color      : #fff;
+}
+
+h2.logo strong {
+  font-size  : 35px;
+  color      : #eb6516;
+  font-weight: 600;
+}
+
+h2.center-logo {
+  margin: 0 25px;
+}
+
+#navbarSupportedContent {
+  justify-content: center;
+}
+
+ul.navbar-nav {}
+
+ul.navbar-nav li.nav-item {
+  margin-right: 25px;
+}
+
+ul.navbar-nav li.nav-item:last-child {
+  margin-right: 0;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+  color: #737f8a;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #eb6516;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #eb6516;
+}
+
+
+@media screen and (max-width: 963px) {
+
+  .logo-menu {
+    width: 140%;
+  }
+
+}

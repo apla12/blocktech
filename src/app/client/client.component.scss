@@ -1,6 +1,7 @@
 .client {
   background-color: #363a43;
-  height          : 500px;
+  height          : auto;
+  padding-bottom  : 5rem;
 }
 
 .bg-one {
@@ -13,26 +14,26 @@
 
 .border {
   border-top: 2px solid rgba(236, 239, 241, 0.07);
-  height: 1px;
-  margin: 15px auto 0;
-  position: relative;
-  width: 30%;
-  border: 1px solid #dee2e6!important;
+  height    : 1px;
+  margin    : 15px auto 0;
+  position  : relative;
+  width     : 30%;
+  border    : 1px solid #dee2e6 !important;
 }
 
 .border:before {
-  content: "";
-  height: 6px;
-  left: 50%;
-  margin-left: -20px;
-  position: absolute;
-  top: -4px;
-  width: 50px;
+  content         : "";
+  height          : 6px;
+  left            : 50%;
+  margin-left     : -20px;
+  position        : absolute;
+  top             : -4px;
+  width           : 50px;
   background-color: #eb6516;
 }
 
 .title {
-  padding-top: 60px;
+  padding-top   : 60px;
   padding-bottom: 60px;
 }
 
@@ -53,4 +54,87 @@
 
 .title.title-white h2 {
   color: #fff;
+}
+
+.clients-grid {
+  display              : grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(11rem, 100%), 1fr));
+  row-gap              : 2rem;
+  column-gap           : 4rem;
+}
+
+.client-block {
+  padding    : 10px;
+  box-shadow : 2px 2px 5px rgba(44, 44, 44, 0.3), 4px 4px 0 rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(236, 239, 241, 0.07);
+  border-top : 1px solid rgba(236, 239, 241, 0.07);
+  margin     : auto;
+  display    : block;
+}
+
+img {
+  max-width : 220px;
+  max-height: 149px;
+}
+
+.bg-1 {
+  background-image : url("../../assets/img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size  : cover;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-position  : center center;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+.section-sm {
+  padding: 70px 0;
+}
+
+.section-xs {
+  padding: 50px 0;
+}
+
+.counters-item {
+  padding      : 25px 0;
+  margin-bottom: 10px;
+  background   : #292F36;
+  color        : #737f8a;
+}
+
+.counters-item i {
+  margin-bottom: 10px;
+  font-size    : 40px;
+  display      : inline-block;
+}
+
+.counters-item span {
+  display    : block;
+  font-weight: bold;
+  font-size  : 35px;
+  line-height: 50px;
+}
+
+.counters-item h3 {
+  font-size: 20px;
+  margin   : 0;
 }

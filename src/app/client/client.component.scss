@@ -74,8 +74,7 @@
 }
 
 img {
-  max-width : 220px;
-  max-height: 149px;
+  width : 100%;
   filter    : grayscale(80%) contrast(120%);
 }
 
@@ -98,15 +97,25 @@ img {
 
 @media (max-width: 480px) {
   .section {
-    padding: 50px 0;
+    padding: 0 0;
   }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 50px 0;
+    padding: 0 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+    row-gap              : 2rem;
+    column-gap           : 3rem;
+  }
+}
+
+
 
 .section-sm {
   padding: 70px 0;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product',
@@ -9,4 +9,5 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export class ProductComponent {
 
   faArrowRight = faArrowRight;
+  check = faCheck;
 }

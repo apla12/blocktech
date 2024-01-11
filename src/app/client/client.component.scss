@@ -57,15 +57,15 @@
 }
 
 .wrapper {
-  display       : flex;
-  flex-wrap     : wrap;
+  display  : flex;
+  flex-wrap: wrap;
 }
 
 .box {
   aspect-ratio  : 3/2;
   object-fit    : contain;
   mix-blend-mode: luminosity;
-  padding   : 10px;
+  padding       : 10px;
 }
 
 .box:hover {
@@ -116,29 +116,42 @@
   margin   : 0;
 }
 
+button {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
 
+button::before {
+  margin-left: auto;
+}
 
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #eb6516;
+  display: block;
+  transition: 0.5s;
+}
 
-// @media (max-width: 480px) {
-//   .section {
-//     padding: 0 0;
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .section {
-//     padding: 0 0;
-//   }
-// }
+button:hover::after, button:hover::before {
+  width: 100%;
+}
 
 @media screen and (max-width: 963px) {
   .section {
     padding: 50px 20px;
   }
+
   .wrapper {
-    display: grid;
+    display    : grid;
     grid-column: 2;
-}
+  }
 }
 
 @media (max-width: 1024px) {
@@ -148,14 +161,3 @@
     column-gap           : 3rem;
   }
 }
-
-
-
-// .section-sm {
-//   padding: 70px 0;
-// }
-
-// .section-xs {
-//   padding: 50px 0;
-// }
-

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faThinkPeaks } from '@fortawesome/free-brands-svg-icons';
-import { faAnchor, faCheck, faChess, faPenRuler, faPencilRuler, faShare } from '@fortawesome/free-solid-svg-icons';
+import { faAnchor, faCheck, faChess, faCompactDisc, faCompass, faCompress, faLineChart, faPenRuler, faPencilRuler, faShare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -12,5 +12,6 @@ export class AboutComponent {
   strategy = faChess;
   anchor = faAnchor;
   check = faCheck;
+  doers = faLineChart;
 
 }

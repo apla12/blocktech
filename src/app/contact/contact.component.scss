@@ -8,7 +8,7 @@
 }
 
 .color {
-  color: #eb6516;
+  color: #eb7625;
 }
 
 .border {
@@ -28,7 +28,7 @@
   position        : absolute;
   top             : -4px;
   width           : 50px;
-  background-color: #eb6516;
+  background-color: #eb7625;
 }
 
 .title {
@@ -44,7 +44,7 @@
 }
 
 .title h2 span {
-  color: #eb6516;
+  color: #eb7625;
 }
 
 .title p {
@@ -120,12 +120,12 @@
 .contact-form input:hover,
 .contact-form textarea:hover,
 #contact-submit:hover {
-  border-color: #eb6516;
+  border-color: #eb7625;
 }
 
 #contact-submit {
   border    : 1px solid #666666;
-  background: #eb6516;
+  background: #eb7625;
   padding   : 12px 0;
   width     : 100%;
   margin    : 0;
@@ -144,8 +144,6 @@
 input::placeholder, textarea::placeholder {
   color: #afbac4;
 }
-
-
 
 .error {
   display         : none;

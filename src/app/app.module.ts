@@ -43,7 +43,7 @@ import { StoreComponent } from './store/store.component';
         appId: '1:199642480203:web:5587265b4a543c923197ce',
         measurementId: 'G-YYCGL2VD5R',
       })
-    )
+    ),
   ],
   providers: [],
 

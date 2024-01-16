@@ -21,7 +21,7 @@
 }
 
 .title h2 span {
-  color: #eb6516;
+  color: #eb7625;
 }
 
 .title p {
@@ -33,7 +33,7 @@
 }
 
 .color {
-  color: #eb6516;
+  color: #eb7625;
 }
 
 .border {
@@ -53,7 +53,7 @@
   position        : absolute;
   top             : -4px;
   width           : 50px;
-  background-color: #eb6516;
+  background-color: #eb7625;
 }
 
 .wrapper {
@@ -134,7 +134,7 @@ button::after, button::before {
   content: '';
   width: 0%;
   height: 2px;
-  background: #eb6516;
+  background: #eb7625;
   display: block;
   transition: 0.5s;
 }
@@ -150,7 +150,7 @@ button:hover::after, button:hover::before {
 
   .wrapper {
     display    : grid;
-    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

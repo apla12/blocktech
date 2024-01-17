@@ -76,7 +76,7 @@
 }
 
 .bg-1 {
-  background-image : url("../../assets/img/banner2.png");
+  background-image : url("../../../assets/img/banner2.png");
   background-repeat: no-repeat;
   background-size  : cover;
   opacity          : 0.8;
@@ -141,7 +141,8 @@
   margin: 0;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #afbac4;
 }
 

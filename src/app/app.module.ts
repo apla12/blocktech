@@ -4,16 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClientComponent } from './client/client.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { MenuComponent } from './menu/menu.component';
-import { ProductComponent } from './product/product.component';
-import { StoreComponent } from './store/store.component';
+import { AboutComponent } from './main/about/about.component';
+import { ClientComponent } from './main/client/client.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { FooterComponent } from './main/footer/footer.component';
+import { HeaderComponent } from './main/header/header.component';
+import { MenuComponent } from './main/menu/menu.component';
+import { ProductComponent } from './main/product/product.component';
+import { AmlseriesComponent } from './main/product/productdetails/amlseries/amlseries.component';
+import { StoreComponent } from './main/store/store.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,9 @@ import { StoreComponent } from './store/store.component';
     HeaderComponent,
     MenuComponent,
     FooterComponent,
+    MainComponent,
+
+    AmlseriesComponent,
   ],
   imports: [
     FormsModule,

@@ -85,7 +85,7 @@
 }
 
 .bg-1 {
-  background-image : url("../../assets/img/bg-1.jpg");
+  background-image : url("../../../assets/img/bg-1.jpg");
   background-repeat: no-repeat;
   background-size  : cover;
 }
@@ -117,29 +117,31 @@
 }
 
 button {
-  color: white;
+  color          : white;
   text-decoration: none;
-  font-size: 15px;
-  border: none;
-  background: none;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-size      : 15px;
+  border         : none;
+  background     : none;
+  font-weight    : 600;
+  font-family    : 'Poppins', sans-serif;
 }
 
 button::before {
   margin-left: auto;
 }
 
-button::after, button::before {
-  content: '';
-  width: 0%;
-  height: 2px;
+button::after,
+button::before {
+  content   : '';
+  width     : 0%;
+  height    : 2px;
   background: #eb7625;
-  display: block;
+  display   : block;
   transition: 0.5s;
 }
 
-button:hover::after, button:hover::before {
+button:hover::after,
+button:hover::before {
   width: 100%;
 }
 
@@ -149,7 +151,7 @@ button:hover::after, button:hover::before {
   }
 
   .wrapper {
-    display    : grid;
+    display              : grid;
     grid-template-columns: 1fr 1fr;
   }
 }

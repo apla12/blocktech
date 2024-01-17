@@ -1,0 +1,12 @@
+div{
+  border: 1px solid #000;
+  display: inline-flex;
+}
+
+.img-prod {
+  height: 500px;
+}
+
+.desc-prod {
+  height: 500px;
+}

@@ -36,13 +36,6 @@
   transition      : all 400ms ease-out 0s;
 }
 
-@media (max-width: 768px) {
-  .social-icon ul li a {
-    width : 55px;
-    height: 55px;
-  }
-}
-
 .social-icon ul li a i {
   color      : #55606a;
   display    : inline-block;
@@ -55,10 +48,17 @@
   transition : all 400ms ease-out 0s;
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 963px) {
   .social-icon ul li a i {
     line-height: 55px;
     font-size  : 25px;
+    width      : 55px;
+    height     : 55px;
+  }
+
+  .img-footer {
+    width: 70% !important;
   }
 }
 

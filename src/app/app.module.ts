@@ -16,6 +16,7 @@ import { ProductComponent } from './main/product/product.component';
 import { AmlseriesComponent } from './main/product/productdetails/amlseries/amlseries.component';
 import { StoreComponent } from './main/store/store.component';
 import { MainComponent } from './main/main.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MainComponent } from './main/main.component';
         measurementId: 'G-YYCGL2VD5R',
       })
     ),
+     NgbModule,
   ],
   providers: [],
 

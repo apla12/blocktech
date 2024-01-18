@@ -1,10 +1,89 @@
-<div class="col-12">
-</div>
+<section class="bg-one amlseries section">
+  <div class="col-12">
+    <div class="title wow fadeIn" data-wow-duration="1500ms">
+      <h2>AML<span class="color">Series</span></h2>
+      <div class="border"></div>
+    </div>
 
-<div class="col-12">
-  <div class="img-prod col-6"></div>
-  <div class="desc-prod col-6"></div>
-</div>
+    <div class="row wow fadeInUp" data-wow-duration="500ms">
+      <div class="img-prod col-4">
+        <ngb-carousel>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="../../../../../assets/img/product/AML/AML-45.png" alt="Random third slide" />
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="../../../../../assets/img/product/AML/AML-45.50.png" alt="Random third slide" />
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="../../../../../assets/img/product/AML/AML-90.50.png" alt="Random third slide" />
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img src="../../../../../assets/img/product/AML/AML-90.png" alt="Random fourth slide" />
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
 
-<div class="col-12">
-</div>
+      <div class="col-8">
+        <p>O produto foi desenvolvido com o objetivo de oferecer um acabamento de qualidade para o ponto de dAMLejo de
+          água da máquina de lavar roupa. O material fornece um maior conforto estético visual para sua casa.
+          O acabamento estético BLOCKTECH apresenta uma geometria circular com diâmetro de 100 mm que faceará a
+          cerâmica.</p>
+
+        <p>CONHEÇA TODOS OS MODELOS, VEJA O VÍDEO E ENCONTRE O SEU:</p>
+        <ul>
+          <li class="closed">45AML50 - Inclinação de 45º para ser encaixado no tubo de esgoto com diâmetro de 50mm.</li>
+          <li class="closed">45AML40 - Inclinação de 45º para ser encaixado no tubo de esgoto com diâmetro de 40mm.</li>
+          <li class="closed">90AML50 - Ângulo de 90º para ser encaixado no tubo de esgoto com diâmetro de 50mm.</li>
+          <li class="closed">90AML40 - Ângulo de 90º para ser encaixado na bolsa do joelho de esgoto com diâmetro de
+            40mm
+            com anel ou sem
+            anel. Deve-se remover o anel de borracha do joelho de esgoto para instalar o produto.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="details row wow fadeInUp" data-wow-duration="500ms">
+      <ul ngbNav #nav="ngbNav" class="nav-tabs">
+        <li [ngbNavItem]="0">
+          <button ngbNavLink>ESPECIFICAÇÃO</button>
+          <ng-template ngbNavContent>
+            <p>
+              No modelo 45AML-50 o acabamento estético BLOCKTECH apresenta uma geometria circular com diâmetro de
+              100 mm que faceará a cerâmica.
+            </p>
+            <p>A seção cilíndrica localizada atrás da peça tem inclinação de 45º e se
+              encaixa no tubo de esgoto com diâmetro de 50 mm. O produto apresenta abertura frontal de 50 mm para a
+              entrada das mangueiras utilizadas nas máquinas de lavar roupa.
+            </p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="1">
+          <button ngbNavLink>INSTALAÇÃO</button>
+          <ng-template ngbNavContent>
+            <p>
+              O acabamento estético BLOCKTECH será encaixado diretamente no tubo de esgoto com inclinação de 45º e
+              diâmetro de 50mm. Não será necessário nenhum tipo de cola, massa ou rejunte para fixar o produto, trata-se
+              de uma instalação limpa. As fotos abaixo demonstram a instalação.
+            </p>
+            <div class="row video">
+              <iframe class="rAMLonsive-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/8MgvpDUxvE4?si=VkTYLkhvWLNxY0rD" title="AML Series"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      <!-- <pre>Active: {{ active }}</pre> -->
+    </div>
+  </div>
+</section>

@@ -1,3 +1,4 @@
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -41,17 +42,17 @@ import { StoreComponent } from './main/store/store.component';
     FontAwesomeModule,
     HttpClientModule,
 
-    // provideFirebaseApp(() =>
-    //   initializeApp({
-    //     apiKey: 'AIzaSyC3_FHHfTiJnCKjCLdyQBESsoiNjh9lx6I',
-    //     authDomain: 'blocktech-ab970.firebaseapp.com',
-    //     projectId: 'blocktech-ab970',
-    //     storageBucket: 'blocktech-ab970.appspot.com',
-    //     messagingSenderId: '974151504471',
-    //     appId: '1:974151504471:web:fbb011d5301f4ca9e2c912',
-    //     measurementId: 'G-QXVEC98HHM',
-    //   })
-    // ),
+    provideFirebaseApp(() =>
+      initializeApp({
+        apiKey: 'AIzaSyC3_FHHfTiJnCKjCLdyQBESsoiNjh9lx6I',
+        authDomain: 'blocktech-ab970.firebaseapp.com',
+        projectId: 'blocktech-ab970',
+        storageBucket: 'blocktech-ab970.appspot.com',
+        messagingSenderId: '974151504471',
+        appId: '1:974151504471:web:fbb011d5301f4ca9e2c912',
+        measurementId: 'G-QXVEC98HHM',
+      })
+    ),
     NgbModule,
   ],
   providers: [],

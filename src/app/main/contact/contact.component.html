@@ -35,30 +35,38 @@
       </div>
 
       <div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-        <form id="contact-form" method="post" action="sendmail.php" role="form">
+        <form id="contact-form" action="javascript:void(0)" (submit)="send()">
+          <div [formGroup]="form">
 
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-          </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" formControlName="name" required
+                placeholder="Your Name">
+            </div>
 
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-          </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" formControlName="email" required
+                placeholder="Your email">
+            </div>
 
-          <div class="form-group">
-            <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-          </div>
 
-          <div class="form-group">
-            <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
-          </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" formControlName="subject" required
+                placeholder="Subject">
+            </div>
 
-          <div id="cf-submit">
-            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+            <div class="form-group">
+              <textarea rows="6" class="form-control" name="message" id="message" formControlName="message" required
+                placeholder="Your message"></textarea>
+            </div>
+
+            <div id="cf-submit">
+              <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit"
+                [disabled]="!form.valid">
+            </div>
           </div>
         </form>
       </div>
-
+      {{form.value | json}}
     </div>
   </div>
 </section>

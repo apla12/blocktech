@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {
+  AbstractControl,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -13,14 +14,42 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  form: FormGroup = this.formBuilder.group({
-    name: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    subject: new FormControl('', [Validators.required]),
-    message: new FormControl('', [Validators.required]),
-  });
+  submitted = false;
+
+  form!: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      name: new FormControl('', [Validators.required]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      message: new FormControl('', [Validators.required]),
+    });
+  }
+
+  get f(): { [key: string]: AbstractControl } {
+    return this.form.controls;
+  }
+
+  onSubmit() {
+    this.submitted = true;
+
+    if (this.form.invalid) {
+      console.log('nao foi');
+      return;
+    } else {
+      console.log('foi');
+      this.send();
+    }
+    this.onReset();
+    //console.log(JSON.stringify(this.form.value, null, 2));
+  }
+
+  onReset(): void {
+    this.submitted = false;
+    this.form.reset();
+  }
 
   async send() {
     emailjs.init('a0gCHaDZXomylHx83');
@@ -28,11 +57,8 @@ export class ContactComponent {
       from_name: this.form.value.name,
       to_name: 'Blocktech',
       from_email: this.form.value.email,
-      subject: this.form.value.suject,
       message: this.form.value.message,
     });
-
     alert('Mensagem has been send.');
-    this.form.reset();
   }
 }

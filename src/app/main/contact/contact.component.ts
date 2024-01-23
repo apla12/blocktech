@@ -36,14 +36,11 @@ export class ContactComponent {
     this.submitted = true;
 
     if (this.form.invalid) {
-      console.log('nao foi');
       return;
     } else {
-      console.log('foi');
       this.send();
     }
     this.onReset();
-    //console.log(JSON.stringify(this.form.value, null, 2));
   }
 
   onReset(): void {

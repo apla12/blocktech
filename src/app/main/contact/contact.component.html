@@ -57,9 +57,9 @@
           <div class="form-group">
             <textarea rows="6" class="form-control" name="message" id="message" formControlName="message" required
               placeholder="Your message" [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"></textarea>
-              <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
-                <div *ngIf="f['message'].errors['required']">Message is required</div>
-              </div>
+            <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+              <div *ngIf="f['message'].errors['required']">Message is required</div>
+            </div>
           </div>
 
           <div id="cf-submit">
@@ -71,12 +71,49 @@
     </div>
   </div>
 </section>
-
-<section class="call-to-action section-sm bg-1 overly">
+<!--
+<section class="call-to-action-contact section-sm bg-1-contact overly">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
+
+           <div class="row">
+
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+            <div class="counters-item">
+              <span data-count="320">0</span>
+              <h3>clients</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+            data-wow-delay="200ms">
+            <div class="counters-item">
+              <span data-count="565">0</span>
+              <h3>housing</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+            data-wow-delay="400ms">
+            <div class="counters-item">
+              <span data-count="95">0</span>
+              <h3>Produced parts</h3>
+
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+            data-wow-delay="600ms">
+            <div class="counters-item kill-margin-bottom">
+              <span data-count="2500">0</span>
+              <h3>Contracts</h3>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>
-</section>
+</section> -->

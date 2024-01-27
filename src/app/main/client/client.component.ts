@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-client',
@@ -7,5 +7,5 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent {
-
+  check = faCheck;
 }

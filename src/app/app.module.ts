@@ -1,5 +1,5 @@
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { NgModule } from '@angular/core';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -17,6 +17,7 @@ import { MainComponent } from './main/main.component';
 import { MenuComponent } from './main/menu/menu.component';
 import { ProductComponent } from './main/product/product.component';
 import { AmlseriesComponent } from './main/product/productdetails/amlseries/amlseries.component';
+import { BtaseriesComponent } from './main/product/productdetails/btaseries/btaseries.component';
 import { StoreComponent } from './main/store/store.component';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { StoreComponent } from './main/store/store.component';
     MainComponent,
 
     AmlseriesComponent,
+    BtaseriesComponent,
   ],
   imports: [
     FormsModule,

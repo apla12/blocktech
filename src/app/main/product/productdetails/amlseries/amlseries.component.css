@@ -1,4 +1,4 @@
-.contact {
+.amlseries {
   height: auto;
 }
 
@@ -136,6 +136,28 @@ li.closed {
   width: 100%;
 }
 
+.tab-content {
+  display   : block;
+  padding   : 25px 120px 36px 25px;
+  text-align: justify;
+}
+
+.desc-prod {
+  text-align: justify;
+  padding: 25px 120px 36px 50px;
+}
+
+.details-prod {
+  align-items    : center;
+  display        : flex;
+  justify-content: center;
+}
+
+.picsum-img-wrapper-install img {
+  width: 100% !important;
+  height: 400px;
+}
+
 @media screen and (max-width: 963px) {
 
   .col-4 {
@@ -170,6 +192,19 @@ li.closed {
   }
 
   .video {
-    width      : 107%;
+    width: 107%;
+  }
+
+  .picsum-img-wrapper-install img {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .tab-content {
+    padding: 25px 0 0 0;
+  }
+
+  .desc-prod {
+    padding: 25px 0px 0px 0px;
   }
 }

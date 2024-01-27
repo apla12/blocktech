@@ -56,17 +56,17 @@
 }
 
 
-.call-to-action {
+.call-to-action-contact {
   background-attachment: fixed;
   height               : 300px;
 }
 
-.call-to-action h2 {
+.call-to-action-contact h2 {
   font-weight: 700;
   color      : #ffffff;
 }
 
-.call-to-action p {
+.call-to-action-contact p {
   font-size: 16px;
   color    : #ffffff;
 }
@@ -75,16 +75,18 @@
   padding: 70px 0;
 }
 
-.bg-1 {
-  background-image : url("../../../assets/img/banner2.png");
-  background-repeat: no-repeat;
-  background-size  : cover;
-  opacity          : 0.8;
+.bg-1-contact {
+  background-color: #242930;
+  // background-image : url("../../../assets/img/banner2.png");
+  // background-repeat: no-repeat;
+  // background-size  : cover;
+  // opacity          : 0.8;
 }
 
 .contact-info {
   color        : #afbac4;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .con-info {

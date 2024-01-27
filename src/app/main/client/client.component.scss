@@ -57,8 +57,9 @@
 }
 
 .wrapper {
-  display  : flex;
-  flex-wrap: wrap;
+  display              : inline-grid;
+  width                : 100%;
+  grid-template-columns: repeat(auto-fit, minmax(max(11dvw), 2fr));
 }
 
 .box {
@@ -79,15 +80,21 @@
 //2 tela
 .parallax-section {
   background-attachment: fixed !important;
-  background-position  : center center;
+  background-position  : top top;
   background-repeat    : no-repeat;
   background-size      : cover;
 }
 
-.bg-1 {
-  background-image : url("../../../assets/img/bg-1.jpg");
+.bg-1-client {
+  background-image : url("../../../assets/img/bg-1.png");
   background-repeat: no-repeat;
   background-size  : cover;
+}
+
+.txt-check {
+  font-family: 'Exo 2', sans-serif;
+  font-size  : 2rem;
+  font-weight: 800;
 }
 
 
@@ -145,6 +152,48 @@ button:hover::before {
   width: 100%;
 }
 
+
+.btn {
+  background-color: transparent;
+  color           : #fff;
+  padding         : 10px 30px;
+  border-radius   : 0;
+  transition      : all 0.3s ease-in 0s;
+}
+
+.btn:focus {
+  color     : #ddd;
+  box-shadow: none;
+}
+
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+}
+
+.btn-main {
+  background           : #eb7625;
+  background-image     : -webkit-linear-gradient(top, #eb6516, #ec8c55);
+  background-image     : -moz-linear-gradient(top, #eb6516, #ec8c55);
+  background-image     : -ms-linear-gradient(top, #eb6516, #ec8c55);
+  background-image     : -o-linear-gradient(top, #eb6516, #ec8c55);
+  background-image     : linear-gradient(to bottom, #eb6516, #ec8c55);
+  -webkit-border-radius: 10;
+  -moz-border-radius   : 10;
+  border-radius        : 10px;
+  font-family          : Arial;
+  color                : #ffffff;
+  font-size            : 23px;
+  padding              : 10px 16px 10px 20px;
+  text-decoration      : none;
+}
+
+.btn-main:hover {
+  background     : #eb7625;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 963px) {
   .section {
     padding: 50px 20px;
@@ -153,6 +202,12 @@ button:hover::before {
   .wrapper {
     display              : grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .txt-check {
+    font-family: "Exo 2", sans-serif;
+    font-size  : 1.5rem;
+    font-weight: 700;
   }
 }
 

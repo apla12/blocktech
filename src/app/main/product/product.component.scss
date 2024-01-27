@@ -59,7 +59,8 @@
     max-width: 85%;
   }
 
-  //////////////////
+  /////////// card ///////////////////////////////
+
   .card {
     background: #fff;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
@@ -74,12 +75,20 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
   }
 
-  .btn {
-    font-size     : 1rem;
-    font-weight   : 500;
-    text-transform: uppercase;
-    padding       : 5px 50px 5px 50px
+  .card-title {
+    margin-bottom: 0.5rem;
+    color        : #000000;
+    font-size    : 100%;
+    font-weight  : 700;
   }
+
+  .card-text {
+    margin-bottom: 0;
+    font-size    : 100%;
+  }
+
+
+  ////////////// BTN ///////////
 
   .btn-warning {
     background     : none #eb7625;
@@ -89,7 +98,6 @@
     text-decoration: none;
     outline        : 0;
     box-shadow     : -1px 6px 19px rgba(247, 129, 10, 0.25);
-    border-radius  : 100px
   }
 
   .btn-warning:hover {
@@ -98,46 +106,25 @@
     box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
   }
 
-
-  .section-sm {
-    padding: 70px 0;
-  }
-
-  .bg-1 {
-    background-image : url("../../../assets/img/fundo01.png");
-    background-repeat: no-repeat;
-    background-size  : cover;
-    opacity          : 0.6;
-    width            : 100vw;
-    height           : 100%;
-  }
-
   .btn-card {
     display        : flex;
     justify-content: flex-end;
   }
 
   .btn {
-    color        : #fff;
-    padding      : 10px 30px;
-    border-radius: 0;
-    transition   : all 0.3s ease-in 0s;
+    color         : #fff;
+    padding       : 10px 30px;
+    margin        : 20px 20px 20px 20px;
+    border-radius : 10px;
+    transition    : all 0.3s ease-in 0s;
+    font-size     : 1rem;
+    font-weight   : 700;
+    text-transform: uppercase;
   }
 
   .btn:focus {
     color     : #ddd;
     box-shadow: none;
-  }
-
-  .btn-transparent {
-    border: 1px solid #4e595f;
-  }
-
-  .btn-transparent:hover,
-  .btn-transparent:focus {
-    background-color: #eb7625;
-    border-color    : #eb7625 !important;
-    color           : #fff;
   }
 
   .btn.active:focus,
@@ -146,211 +133,91 @@
     outline: 0;
   }
 
-  .btn-main {
-    background    : #eb7625;
-    color         : #fff;
-    display       : inline-block;
-    font-size     : 14px;
-    letter-spacing: 1px;
-    padding       : 10px 35px;
-    text-transform: uppercase;
+  .section-sm {
+    padding: 70px 0;
   }
-
-  .btn-main:hover {
-    background: #eb7625;
-    color     : #fff;
-  }
-
-  .card-banner {
-    height       : 100%;
-    width        : 100%;
-    background   : linear-gradient(to right, #363a43, rgba(255, 122, 89, 0));
-    border-radius: 10px;
-  }
-
 
   hr {
     height    : 1px;
     border    : none;
     background: -webkit-gradient(linear, -50% 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #ffffff));
-  }
-
-  .text-banner {
-    color  : #fff;
-    padding: 20px 20px 0 20px;
   }
 
   .call-to-action {
     background-attachment: fixed;
   }
 
-  .call-to-action p {
-    font-size: 16px;
-    color    : #ffffff;
-  }
-
-  .call-to-action .btn-main {
-    margin       : 20px 20px 20px 20px;
-    border-radius: 10px;
-  }
-
-
   .section-sm {
-    padding: 10px 0;
+    padding: 50px 0;
   }
 
-  .bg-1 {
-    background-image : url("../../../assets/img/fundo02.png");
-    background-repeat: no-repeat;
-    background-size  : cover;
-    opacity          : 0.6;
-    width            : 100vw;
-    height           : 100%;
-
+  .bg-1-product::before {
+    content        : "";
+    width          : 100vw;
+    height         : 100%;
     align-items    : center;
     display        : flex;
     flex-direction : row;
     flex-wrap      : wrap;
     justify-content: center;
+    position       : relative;
   }
 
-  .btn {
-    color        : #fff;
-    padding      : 10px 30px;
-    border-radius: 0;
-    transition   : all 0.3s ease-in 0s;
+  .bg-1-product {
+    background-image : url("../../../assets/img/fundo012.png");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    opacity          : 0.9;
+    inset            : 0;
+    z-index          : -1;
   }
 
-  .btn:focus {
-    color     : #ddd;
-    box-shadow: none;
-  }
 
-  .btn-transparent {
-    border: 1px solid #4e595f;
-  }
-
-  .btn-transparent:hover,
-  .btn-transparent:focus {
-    background-color: #eb7625;
-    border-color    : #eb7625 !important;
-    color           : #fff;
-  }
-
-  .btn.active:focus,
-  .btn:active:focus,
-  .btn:focus {
-    outline: 0;
-  }
-
-  .btn-main {
-    background           : #eb7625;
-    background-image     : -webkit-linear-gradient(top, #eb7625, #ec8c55);
-    background-image     : -moz-linear-gradient(top, #eb7625, #ec8c55);
-    background-image     : -ms-linear-gradient(top, #eb7625, #ec8c55);
-    background-image     : -o-linear-gradient(top, #eb7625, #ec8c55);
-    background-image     : linear-gradient(to bottom, #eb7625, #ec8c55);
-    -webkit-border-radius: 10;
-    -moz-border-radius   : 10;
-    border-radius        : 10px;
-    text-shadow          : 0px 0px 0px #666666;
-    -webkit-box-shadow   : 2px 2px 2px #666666;
-    -moz-box-shadow      : 2px 2px 2px #666666;
-    box-shadow           : 2px 2px 2px #666666;
-    font-family          : Arial;
-    color                : #ffffff;
-    font-size            : 23px;
-    margin-bottom        : 20px;
-    text-decoration      : none;
-  }
-
-  .btn-main:hover {
-    background     : #eb7625;
-    text-decoration: none;
-  }
-
-  .card-banner {
-    height       : 100%;
-    width        : 100%;
-    background   : linear-gradient(to right, #363a43, rgba(255, 122, 89, 0));
-    border-radius: 10px;
-  }
-
-  hr {
-    height    : 1px;
-    border    : none;
-    background: -webkit-gradient(linear, -50% 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #ffffff));
-  }
-
-  .text-banner {
-    color  : #fff;
-    padding: 20px 20px 0 20px;
-  }
-
-  .txt-check {
-    display        : flex;
-    justify-content: center;
-    gap            : 10px;
-    align-items    : baseline;
-  }
-
-  .faCheck {
-    color    : #eb7625;
-    font-size: 2rem;
-  }
-
-  .desc-banner {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color      : #fff !important;
-    font-size  : 2rem !important;
-    text-shadow: 1px 1px 2px rgba(251, 244, 244, 0.6);
-  }
-
-  h2 {
+  .parceiro-class h2 {
     color         : #ffffff;
     font-family   : "Open Sans Condensed", sans-serif;
     font-size     : 47px;
-    font-weight   : 700;
+    font-weight   : 900;
     margin        : 0 0 0;
     padding       : 10px 10px;
     text-align    : center;
     text-transform: uppercase;
-    text-shadow   : 1px 1px 2px rgba(251, 244, 244, 0.6);
+    text-shadow   : 1px 1px 1px rgb(54 58 67);
   }
 
-  @media (max-width: 370px) {
-    .box .btn {
-      font-size: 1rem
-    }
+  .parceiro-class {
+    display        : flex;
+    justify-content: center;
+    width          : 100%;
+    padding-top    : 20px;
   }
 
-  @media screen and (max-width: 963px) {
+  .parceiro-img-class {
+    width     : 100%;
+    text-align: center !important;
+    padding-bottom: 20px;
+  }
+
+  .img-parceiro {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 991px) {
     .section {
       padding: 50px 10px;
-    }
-
-    .about-2 .content-block {
-      padding: 40px 15px;
     }
 
     .container-fluid {
       max-width: 100%;
     }
 
-    .bg-1 {
-      background-image   : url("../../../assets/img/fundo01.png");
-      background-repeat  : no-repeat;
-      background-size    : cover;
-      background-position: top;
-      opacity            : 0.9;
-      width              : 100vw;
-      height             : 20%;
+    .parceiro-class h2 {
+      font-size  : 26px;
+      font-weight: 700;
     }
 
-    .txt-check {
-      display        : grid;
-      justify-content: center;
-      gap            : 10px;
-      align-items    : baseline;
+    .img-parceiro {
+      width: 80%;
     }
+
   }

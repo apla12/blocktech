@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,6 +8,9 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./btaseries.component.css'],
 })
 export class BtaseriesComponent {
+
+  check = faCheck;
+
   constructor(config: NgbCarouselConfig) {
     config.interval = 10000;
     config.wrap = false;

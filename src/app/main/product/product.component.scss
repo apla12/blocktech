@@ -90,20 +90,26 @@
 
   ////////////// BTN ///////////
 
-  .btn-warning {
-    background     : none #eb7625;
-    color          : #ffffff;
-    fill           : #ffffff;
-    border         : none;
-    text-decoration: none;
-    outline        : 0;
-    box-shadow     : -1px 6px 19px rgba(247, 129, 10, 0.25);
+  .btn-main {
+    background               : #eb7625;
+    background-image         : -webkit-linear-gradient(top, #eb6516, #ec8c55);
+    background-image         : -moz-linear-gradient(top, #eb6516, #ec8c55);
+    background-image         : -ms-linear-gradient(top, #eb6516, #ec8c55);
+    background-image         : -o-linear-gradient(top, #eb6516, #ec8c55);
+    background-image         : linear-gradient(to bottom, #eb6516, #ec8c55);
+    -webkit-border-radius    : 10;
+    -moz-border-radius       : 10;
+    border-radius            : 10px;
+    font-family              : Arial;
+    color                    : #ffffff;
+    font-size                : 23px;
+    padding                  : 10px 16px 10px 20px;
+    text-decoration          : none;
   }
 
-  .btn-warning:hover {
-    background: none #eb7625;
-    color     : #ffffff;
-    box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
+  .btn-main:hover {
+    background     : #eb7625;
+    text-decoration: none;
   }
 
   .btn-card {

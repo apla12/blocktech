@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,11 +8,15 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./amlseries.component.css'],
 })
 export class AmlseriesComponent implements OnInit {
+
+  check = faCheck;
+
   constructor(config: NgbCarouselConfig) {
     config.interval = 10000;
-    config.wrap = false;
-    config.keyboard = false;
-    config.pauseOnHover = false;
+    config.wrap = true;
+    config.keyboard = true;
+    config.pauseOnHover = true;
+    config.animation = true;
   }
 
   ngOnInit() {}

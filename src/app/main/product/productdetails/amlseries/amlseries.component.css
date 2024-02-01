@@ -2,7 +2,7 @@
   height: auto;
 }
 
-.bg-one {
+.bg-one-aml {
   background-color: #252a31;
   color           : #afbac4;
 }
@@ -18,12 +18,13 @@
 }
 
 .border {
-  border-top: 2px solid #666666;
-  height    : 1px;
-  margin    : 15px auto 0;
-  position  : relative;
-  width     : 30%;
-  border    : 1px solid #dee2e6 !important;
+  border-top   : 2px solid #666666;
+  /* border-top: 2px solid rgba(236, 239, 241, 0.07); */
+  height       : 1px;
+  margin       : 15px auto 0;
+  position     : relative;
+  width        : 30%;
+  border       : 1px solid #dee2e6 !important;
 }
 
 .border:before {
@@ -40,7 +41,6 @@
 .title {
   width         : 100%;
   padding-bottom: 50px;
-
 }
 
 .title h2 {
@@ -63,57 +63,18 @@
   color: #fff;
 }
 
-.border {
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
-  height    : 1px;
-  margin    : 15px auto 0;
-  position  : relative;
-  width     : 30%;
-  border    : 1px solid #dee2e6 !important;
-}
-
-.border:before {
-  content         : "";
-  height          : 6px;
-  left            : 50%;
-  margin-left     : -20px;
-  position        : absolute;
-  top             : -4px;
-  width           : 50px;
-  background-color: #eb7625;
-}
-
 .img-prod {
   text-align    : center;
   padding-bottom: 1rem;
 }
 
 .closed {
-  padding: 0px 0px 10px 10px;
+  padding: 5px 0 5px 10px;
 }
 
 .icon-check {
   color       : #eb7625;
   margin-right: 10px;
-}
-
-.nav-link {
-  display        : block;
-  padding        : 0.5rem 1rem;
-  font-size      : 0.8rem;
-  font-weight    : 700;
-  color          : #eb7625;
-  text-decoration: none;
-  background     : none;
-  border         : 0;
-  transition     : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-.video {
-  position   : relative;
-  overflow   : hidden;
-  width      : 32%;
-  padding-top: 0;
 }
 
 .responsive-iframe {
@@ -130,14 +91,6 @@
 
 .details {
   padding-top: 5rem;
-}
-
-.picsum-img-wrapper {
-  width: 100%;
-}
-
-.picsum-img-wrapper img {
-  width: 100%;
 }
 
 .tab-content {
@@ -157,14 +110,41 @@
   justify-content: center;
 }
 
-.picsum-img-wrapper-install {
-  position                   : relative;
-  float                      : left;
-  width                      : 100%;
-  margin-right               : -100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility        : hidden;
-  transition                 : transform .6s ease-in-out;
+.nav {
+  --bs-nav-link-padding-x     : 1rem;
+  --bs-nav-link-padding-y     : 0.5rem;
+  --bs-nav-link-font-weight   : ;
+  --bs-nav-link-color         : #eb7625;
+  --bs-nav-link-hover-color   : #737f8a;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display                     : flex;
+  flex-wrap                   : wrap;
+  padding-left                : 0;
+  margin-bottom               : 0;
+  list-style                  : none;
+}
+
+.tab-details {
+  display        : block;
+  padding        : 0.5rem 1rem !important;
+  font-size      : 0.8em !important;
+  font-weight    : 700 !important;
+  color          : #eb7625 !important;
+  text-decoration: none;
+  background     : none;
+  border         : 0;
+  transition     : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.details-install {
+  color      : #afbac4;
+  font-size  : 14px;
+  padding    : 20px 0 20px 20px;
+  font-weight: 400 !important;
+}
+
+.img-install {
+  padding: 20px 0 20px 20px;
 }
 
 @media screen and (max-width: 963px) {
@@ -179,28 +159,7 @@
     width: 100%;
   }
 
-  .picsum-img-wrapper {
-    width : 340px;
-    height: 210px;
-  }
-
-  .img-prod[_ngcontent-amo-c30] {
-    width: 100%;
-  }
-
-  .nav-link {
-    display        : block;
-    padding        : 0.5rem 1rem;
-    font-size      : 0.8em;
-    font-weight    : 700;
-    color          : #eb7625;
-    text-decoration: none;
-    background     : none;
-    border         : 0;
-    transition     : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-
-  .video {
+  .img-prod {
     width: 100%;
   }
 
@@ -209,6 +168,6 @@
   }
 
   .desc-prod {
-    padding: 25px 0px 0px 0px;
+    padding: 25px 0 0 0;
   }
 }

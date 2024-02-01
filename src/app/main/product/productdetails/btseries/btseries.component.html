@@ -1,0 +1,151 @@
+<section class="bg-one-bt btseries section">
+  <div class="col-12">
+    <div class="title wow fadeIn" data-wow-duration="1500ms">
+      <h2>BT<span class="color">Series</span></h2>
+      <div class="border"></div>
+    </div>
+
+    <div class="row wow fadeInUp" data-wow-duration="500ms">
+      <div class="img-prod col-4">
+        <carousel (activeSlideChange)="log($event)" [interval]="0">
+          <slide *ngFor="let slide of slides; let index=index">
+            <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+      </div>
+
+      <div class="col-8 desc-prod">
+        <div class="details-install">A linha de produtos BT apresenta 5 tipos de bloqueadores temporários que são
+          utilizados para eliminar 100% os entupimentos ocasionado por concreto, cimeto, argamassa, gesso, rejunte,
+          detritos de obra no geral que possam cair acidentalmente nos tubos, prumadas.</div>
+
+        <div class="details-install">
+          Tamanhos disponíveis:
+          <a (click)="selectTab(0)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BT-150: Porduto utilizado para
+              eliminar o entupimento dos tubos de esgoto com diâmetro de 150mm.</div>
+          </a>
+          <a (click)="selectTab(1)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-100: Porduto utilizado para
+              eliminar o entupimento dos tubos de esgoto com diâmetro de 150mm.</div>
+          </a>
+          <a (click)="selectTab(2)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-75: Porduto utilizado para
+              eliminar o entupimento dos tubos de esgoto com diâmetro de 75mm.</div>
+          </a>
+          <a (click)="selectTab(2)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-50: Porduto utilizado para
+              eliminar o entupimento dos tubos de esgoto com diâmetro de 50mm.</div>
+          </a>
+          <a (click)="selectTab(2)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-40: Porduto utilizado para
+              eliminar o entupimento dos tubos de esgoto com diâmetro de 40mm.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="details row wow fadeInUp" data-wow-duration="500ms">
+
+      <div>
+        <tabset #staticTabs>
+          <tab class="tab-details" heading="ESPECIFICAÇÃO">
+            <div class="details-install">
+              BT-150<br />
+              O Bloqueador temporário apresenta uma geometria cilíndrica que fornece o acoplamento perfeito ao tubo de
+              esgoto com diâmetro de 150mm.<br />
+              O produto tem uma pequena aba com a função de batente e ajuda a fixação no tubo de esgoto com diâmetro de
+              150mm.<br />
+              O Bloqueador pode ser removido pela parte circular de menor espessura que passa acima da logo marca
+              BLOCKTECH e abaixo do código BT-150.<br />
+            </div>
+          </tab>
+
+          <tab class="tab-details" heading="INSTALAÇÃO">
+            <div class="details-install">
+              O bloqueador temporário BT-150 deve ser instalado internamente nas tubulações de esgoto com diâmetro de
+              150mm podendo ser encaixado ou colado. O produto é compatível com a cola adesiva de PVC facilmente
+              encontrada no mercado e pode ser utilizado nos pontos de ralo e prumadas de 150mm.<br />
+
+              BT-100<br />
+              O Bloqueador temporário apresenta uma geometria cilíndrica que fornece o acoplamento perfeito ao tubo de
+              esgoto com diâmetro de 100mm.<br />
+              O produto tem uma pequena aba com a função de batente e ajuda a fixação no tubo de esgoto com diâmetro de
+              100mm.<br />
+              O Bloqueador pode ser removido pela parte circular de menor espessura que passa acima da logo marca
+              BLOCKTECH e abaixo do código BT-100.<br />
+
+              UTILIZAÇÃO:<br />
+              O bloqueador temporário BT-100 deve ser instalado internamente nas tubulações de esgoto com diâmetro de
+              100mm podendo ser encaixado ou colado. O produto é compatível com a cola adesiva de PVC facilmente
+              encontrada no mercado e pode ser utilizado nos pontos de ralo, prumadas e nos furos de fachada deixado
+              para a instalação do ar condicionado Split.<br />
+
+              BT-75<br />
+              O Bloqueador temporário apresenta uma geometria cilíndrica que fornece o acoplamento perfeito ao tubo de
+              esgoto com diâmetro de 75mm.<br />
+              O produto tem uma pequena aba com a função de batente e ajuda a fixação no tubo de esgoto com diâmetro de
+              75mm.<br />
+              O Bloqueador pode ser removido pela parte circular de menor espessura que passa acima da logo marca
+              BLOCKTECH e abaixo do código BT-75.<br />
+
+              UTILIZAÇÃO:<br />
+              O bloqueador temporário BT-75 deve ser instalado internamente nas tubulações de esgoto com diâmetro de
+              75mm podendo ser encaixado ou colado. O produto é compatível com a cola adesiva de PVC facilmente
+              encontrada no mercado e pode ser utilizado nos pontos de prumada e nos furos de fachada deixado para a
+              instalação do ar condicionado Split.<br />
+
+              BT-50<br />
+              O Bloqueador temporário apresenta uma geometria cilíndrica que fornece o acoplamento perfeito ao tubo de
+              esgoto com diâmetro de 50mm.<br />
+              O produto tem uma pequena aba com a função de batente e ajuda a fixação no tubo de esgoto com diâmetro de
+              50mm.<br />
+
+              UTILIZAÇÃO:<br />
+              O bloqueador temporário BT-50 deve ser encaixado internamente nas tubulações de esgoto com diâmetro de
+              50mm e pode ser utilizado nos pontos de esgoto de parede de lavatórios, pias, tanques, maquina de lavar
+              roupa. O produto deve ser removido somente quando for realizar as instalações de louças e metais<br />
+
+              BT-40<br />
+              O Bloqueador temporário apresenta uma geometria cilíndrica que fornece o acoplamento perfeito ao tubo de
+              esgoto com diâmetro de 40mm.<br />
+              O produto tem uma pequena aba com a função de batente e ajuda a fixação no tubo de esgoto com diâmetro de
+              40mm.<br />
+
+              UTILIZAÇÃO:
+              O bloqueador temporário BT-40 deve ser encaixado internamente nas tubulações de esgoto com diâmetro de
+              40mm e pode ser utilizado nos pontos de esgoto de parede de lavatórios, pias, tanques, maquina de lavar
+              roupa.<br />
+              O produto deve ser removido somente quando for realizar as instalações de louças e metais.<br />
+            </div>
+            <!-- <div class="row details-prod">
+              <div class="row img-install">
+                <div class="col-4">
+                  <carousel (activeSlideChange)="log($event)" [interval]="0">
+                    <slide *ngFor="let slide of slides_install; let index=index">
+                      <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+                    </slide>
+                  </carousel>
+                </div>
+                <div class="col-8">
+                  <div class="details-install">{{slideChangeMessage}}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <iframe width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
+                </div>
+              </div>
+              <div class="col-6"></div>
+            </div> -->
+          </tab>
+        </tabset>
+      </div>
+      <hr />
+    </div>
+  </div>
+</section>

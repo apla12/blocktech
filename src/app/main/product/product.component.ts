@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { AmlseriesComponent } from './productdetails/amlseries/amlseries.component';
 
@@ -6,6 +6,7 @@ import { AmlseriesComponent } from './productdetails/amlseries/amlseries.compone
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProductComponent {
   faArrowRight = faArrowRight;

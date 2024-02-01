@@ -1,0 +1,173 @@
+.bcseries {
+  height: auto;
+}
+
+.bg-one-bc {
+  background-color: #252a31;
+  color           : #afbac4;
+}
+
+.section {
+  padding: 50px 50px;
+}
+
+.color {
+  color       : #eb7625;
+  margin-left : 5px;
+  margin-right: 5px;
+}
+
+.border {
+  border-top   : 2px solid #666666;
+  /* border-top: 2px solid rgba(236, 239, 241, 0.07); */
+  height       : 1px;
+  margin       : 15px auto 0;
+  position     : relative;
+  width        : 30%;
+  border       : 1px solid #dee2e6 !important;
+}
+
+.border:before {
+  content         : "";
+  height          : 6px;
+  left            : 50%;
+  margin-left     : -20px;
+  position        : absolute;
+  top             : -4px;
+  width           : 50px;
+  background-color: #eb7625;
+}
+
+.title {
+  width         : 100%;
+  padding-bottom: 50px;
+}
+
+.title h2 {
+  font-weight    : 700;
+  font-size      : 30px;
+  color          : #fff;
+  display        : flex;
+  justify-content: center;
+}
+
+.title h2 span {
+  color: #eb7625;
+}
+
+.title p {
+  color: #666;
+}
+
+.title.title-white h2 {
+  color: #fff;
+}
+
+.img-prod {
+  text-align    : center;
+  padding-bottom: 1rem;
+}
+
+.closed {
+  padding: 5px 0 5px 10px;
+}
+
+.icon-check {
+  color       : #eb7625;
+  margin-right: 10px;
+}
+
+.responsive-iframe {
+  position       : absolute;
+  top            : 0;
+  left           : 0;
+  bottom         : 0;
+  right          : 0;
+  width          : 100%;
+  height         : 100%;
+  display        : flex;
+  justify-content: center;
+}
+
+.details {
+  padding-top: 5rem;
+}
+
+.tab-content {
+  display   : block;
+  padding   : 25px 120px 36px 25px;
+  text-align: justify;
+}
+
+.desc-prod {
+  text-align: justify;
+  padding   : 0 120px 36px 50px;
+}
+
+.details-prod {
+  align-items    : center;
+  display        : flex;
+  justify-content: center;
+}
+
+.nav {
+  --bs-nav-link-padding-x     : 1rem;
+  --bs-nav-link-padding-y     : 0.5rem;
+  --bs-nav-link-font-weight   : ;
+  --bs-nav-link-color         : #eb7625;
+  --bs-nav-link-hover-color   : #737f8a;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display                     : flex;
+  flex-wrap                   : wrap;
+  padding-left                : 0;
+  margin-bottom               : 0;
+  list-style                  : none;
+}
+
+.tab-details {
+  display        : block;
+  padding        : 0.5rem 1rem !important;
+  font-size      : 0.8em !important;
+  font-weight    : 700 !important;
+  color          : #eb7625 !important;
+  text-decoration: none;
+  background     : none;
+  border         : 0;
+  transition     : color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.details-install {
+  color      : #afbac4;
+  font-size  : 14px;
+  padding    : 20px 0 20px 20px;
+  font-weight: 400 !important;
+}
+
+.img-install {
+  padding: 20px 0 20px 20px;
+}
+
+@media screen and (max-width: 963px) {
+
+  .col-4 {
+    flex : 0 0 auto;
+    width: 100%;
+  }
+
+  .col-8 {
+    flex : 0 0 auto;
+    width: 100%;
+  }
+
+  .img-prod {
+    width: 100%;
+  }
+
+  .tab-content {
+    padding: 25px 0 0 0;
+  }
+
+  .desc-prod {
+    padding: 25px 0 0 0;
+  }
+}

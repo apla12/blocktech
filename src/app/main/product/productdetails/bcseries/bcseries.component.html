@@ -1,0 +1,99 @@
+<section class="bg-one-bc bcseries section">
+  <div class="col-12">
+    <div class="title wow fadeIn" data-wow-duration="1500ms">
+      <h2>BC<span class="color">Series</span></h2>
+      <div class="border"></div>
+    </div>
+
+    <div class="row wow fadeInUp" data-wow-duration="500ms">
+      <div class="img-prod col-4">
+        <carousel (activeSlideChange)="log($event)" [interval]="0">
+          <slide *ngFor="let slide of slides; let index=index">
+            <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+      </div>
+
+      <div class="col-8 desc-prod">
+        <div class="details-install">A linha de produtos BC apresenta 3 tipos de bloqueadores temporários que são
+          utilizados para eliminar 100% os entupimentos ocasionado por concreto, cimeto, argamassa, gesso, rejunte,
+          detritos de obra no geral que possam cair acidentalmente nas conexões, principalmente dos joelhos instalados
+          nos pontos de esgoto de parede das pias de cozinha, dos lavatórios dos lavabos, lavatórios de banheiros, dos
+          tanques e das máquinas de lavar roupas, ou seja, de todos os pontos de esgoto de parede de uma construção
+          civil.</div>
+
+        <div class="details-install">
+          Tamanhos disponíveis:
+          <a (click)="selectTab(0)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BC-50: Porduto utilizado para
+              eliminar o entupimento das conexõs de esgoto com diâmetro de 50mm</div>
+          </a>
+          <a (click)="selectTab(1)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BC-40: Porduto utilizado para
+              eliminar o entupimento das conexõs de esgoto sem anel e diâmetro de 40mm</div>
+          </a>
+          <a (click)="selectTab(2)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BCA-40: Porduto utilizado para
+              eliminar o entupimento das conexõs de esgoto com anel e diâmetro de 40mm.</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="details row wow fadeInUp" data-wow-duration="500ms">
+
+      <div>
+        <tabset #staticTabs>
+          <tab class="tab-details" heading="ESPECIFICAÇÃO">
+            <div class="details-install">
+              Os Bloqueadores temporários apresentam uma geometria cilíndrica que fornece o acoplamento perfeito nas
+              conexões.
+              Os produtos têm uma pequena aba com a função de batente que ajuda a fixar nas conexões.
+              O Bloqueador deve ser removido pela parte circular de menor espessura que encontra-se acima da logomarca
+              central "B".
+            </div>
+          </tab>
+
+          <tab class="tab-details" heading="INSTALAÇÃO">
+            <div class="details-install">
+              Os bloqueadores temporários devem ser encaixados internamente na bolsa dos joelhos localizados nos pontos
+              de esgoto de parede no início da obra.
+              Para alguns tipos de fabricantes de conexões recomenda-se remover o anel de borracha para uma melhor
+              instalação do produto.
+              A linha BC deve ser removida pelo rompimento da parte circular de menor espessura que encontra-se acima da
+              logomarca central "B".
+              Deve ser utilizado uma chave de fenda ou qualquer artefato pontiagudo para realizar a remoção do produto.
+              Os anéis de borracha que foram removidos devem retornar ao local de origem
+              Os bloqueadores temporários devem ser removidos na etapa das instalações de loucas e metais.
+            </div>
+            <!-- <div class="row details-prod">
+              <div class="row img-install">
+                <div class="col-4">
+                  <carousel (activeSlideChange)="log($event)" [interval]="0">
+                    <slide *ngFor="let slide of slides_install; let index=index">
+                      <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+                    </slide>
+                  </carousel>
+                </div>
+                <div class="col-8">
+                  <div class="details-install">{{slideChangeMessage}}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <iframe width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
+                </div>
+              </div>
+              <div class="col-6"></div>
+            </div> -->
+          </tab>
+        </tabset>
+      </div>
+      <hr />
+    </div>
+  </div>
+</section>

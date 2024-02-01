@@ -4,8 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './main/about/about.component';
@@ -19,6 +22,11 @@ import { ProductComponent } from './main/product/product.component';
 import { AmlseriesComponent } from './main/product/productdetails/amlseries/amlseries.component';
 import { BtaseriesComponent } from './main/product/productdetails/btaseries/btaseries.component';
 import { StoreComponent } from './main/store/store.component';
+
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BcseriesComponent } from './main/product/productdetails/bcseries/bcseries.component';
+import { BtseriesComponent } from './main/product/productdetails/btseries/btseries.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +43,8 @@ import { StoreComponent } from './main/store/store.component';
 
     AmlseriesComponent,
     BtaseriesComponent,
+    BtseriesComponent,
+    BcseriesComponent,
   ],
   imports: [
     FormsModule,
@@ -55,7 +65,14 @@ import { StoreComponent } from './main/store/store.component';
         measurementId: 'G-QXVEC98HHM',
       })
     ),
+
     NgbModule,
+    CarouselModule,
+    TabsModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    CollapseModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [],
 

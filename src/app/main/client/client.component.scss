@@ -7,7 +7,6 @@
   padding: 50px 50px;
 }
 
-
 .title {
   padding-top   : 60px;
   padding-bottom: 60px;
@@ -92,11 +91,18 @@
 }
 
 .txt-check {
-  font-family: 'Exo 2', sans-serif;
-  font-size  : 2rem;
+  font-size: 2.5rem;
+  color: #292F36;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin-top: 1px;
   font-weight: 800;
 }
 
+fa-icon{
+  color: #ec8c55;
+}
 
 .counters-item {
   padding      : 25px 0;
@@ -172,7 +178,7 @@ button:hover::before {
   outline: 0;
 }
 
-.btn-main {
+.btn-main-contact {
   background           : #eb7625;
   background-image     : -webkit-linear-gradient(top, #eb6516, #ec8c55);
   background-image     : -moz-linear-gradient(top, #eb6516, #ec8c55);
@@ -189,9 +195,18 @@ button:hover::before {
   text-decoration      : none;
 }
 
-.btn-main:hover {
+.btn-main-contact:hover {
   background     : #eb7625;
   text-decoration: none;
+}
+
+.desc-banner {
+  font-size: 1.5rem;
+  color: #363a43;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin-top: 1px;
 }
 
 @media screen and (max-width: 963px) {

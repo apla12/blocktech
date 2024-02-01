@@ -1,9 +1,8 @@
 .contact {
-  background-color: #363a43;
   height          : auto;
 }
 
-.bg-one {
+.bg-one-contact {
   background-color: #363a43;
 }
 
@@ -145,7 +144,8 @@
 
 input::placeholder,
 textarea::placeholder {
-  color: #afbac4;
+  color: #afbac4 !important;
+  font-size: 12px;
 }
 
 .error {

@@ -22,6 +22,7 @@ export class BcseriesComponent implements OnInit {
 
   slides: { image: string; text?: string }[] = [
     { image: '../../../../../assets/img/product/BC/BC-50.png' },
+    { image: '../../../../../assets/img/product/BC/BC-40.png' },
     { image: '../../../../../assets/img/product/BC/BCA-40.png' },
   ];
 

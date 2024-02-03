@@ -27,6 +27,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BcseriesComponent } from './main/product/productdetails/bcseries/bcseries.component';
 import { BtseriesComponent } from './main/product/productdetails/btseries/btseries.component';
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { BtseriesComponent } from './main/product/productdetails/btseries/btseri
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    NgxBootstrapIconsModule.pick(allIcons),
 
     provideFirebaseApp(() =>
       initializeApp({

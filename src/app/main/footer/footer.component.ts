@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { faFacebook, faFacebookF, faFacebookSquare, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class FooterComponent {
   date: any;
+  facebook = faFacebookSquare;
+  youtube = faYoutube;
+  instagram = faInstagram;
 
   ngOnInit(): void {
     const date = new Date();

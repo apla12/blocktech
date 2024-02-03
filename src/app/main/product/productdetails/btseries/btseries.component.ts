@@ -20,7 +20,11 @@ export class BtseriesComponent implements OnInit {
   slideChangeMessage = '';
 
   slides: { image: string; text?: string }[] = [
+    { image: '../../../../../assets/img/product/BT/BT-150.png' },
     { image: '../../../../../assets/img/product/BT/BT-100.png' },
+    { image: '../../../../../assets/img/product/BT/BT-75.png' },
+    { image: '../../../../../assets/img/product/BT/BT-50.png' },
+    { image: '../../../../../assets/img/product/BT/BT-40.png' },
   ];
 
   slides_install: { image: string; text?: string }[] = [

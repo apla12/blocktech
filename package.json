@@ -33,6 +33,7 @@
     "jquery": "^3.7.1",
     "lts": "^1.2.0",
     "ngx-bootstrap": "^10.3.0",
+    "ngx-bootstrap-icons": "^1.9.3",
     "popper.js": "^1.16.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

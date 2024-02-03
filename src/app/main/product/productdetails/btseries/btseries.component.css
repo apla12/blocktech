@@ -8,7 +8,7 @@
 }
 
 .section {
-  padding: 50px 50px;
+  padding: 0 25px;
 }
 
 .color {
@@ -39,7 +39,7 @@
 }
 
 .title {
-  width         : 100%;
+  padding-top   : 50px;
   padding-bottom: 50px;
 }
 
@@ -138,9 +138,10 @@
 
 .details-install {
   color      : #afbac4;
-  font-size  : 14px;
+  font-size  : 17px;
+  font-weight: 500 !important;
   padding    : 20px 0 20px 20px;
-  font-weight: 400 !important;
+  font-family: 'Effra-Regular', Arial, Helvetica, sans-serif !important;
 }
 
 .img-install {

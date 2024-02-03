@@ -4,12 +4,12 @@
 }
 
 .section {
-  padding: 50px 50px;
+  padding: 0 25px;
 }
 
 .title {
-  padding-top   : 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .title h2 {
@@ -91,13 +91,13 @@
 }
 
 .txt-check {
-  font-size: 2.5rem;
+  font-size: 30px;
   color: #292F36;
-  font-family: "Raleway", sans-serif;
   width: 100%;
   text-align: center;
   margin-top: 1px;
   font-weight: 800;
+  font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
 }
 
 fa-icon{
@@ -136,7 +136,6 @@ button {
   border         : none;
   background     : none;
   font-weight    : 600;
-  font-family    : 'Poppins', sans-serif;
 }
 
 button::before {
@@ -158,12 +157,15 @@ button:hover::before {
   width: 100%;
 }
 
+.card-banner-client{
+  height: 200px;
+}
 
-.btn {
+.btn-client {
   background-color: transparent;
   color           : #fff;
   padding         : 10px 30px;
-  border-radius   : 0;
+  border-radius   : 15px;
   transition      : all 0.3s ease-in 0s;
 }
 
@@ -178,19 +180,18 @@ button:hover::before {
   outline: 0;
 }
 
-.btn-main-contact {
+.btn-main-client {
   background           : #eb7625;
   background-image     : -webkit-linear-gradient(top, #eb6516, #ec8c55);
   background-image     : -moz-linear-gradient(top, #eb6516, #ec8c55);
   background-image     : -ms-linear-gradient(top, #eb6516, #ec8c55);
   background-image     : -o-linear-gradient(top, #eb6516, #ec8c55);
   background-image     : linear-gradient(to bottom, #eb6516, #ec8c55);
-  -webkit-border-radius: 10;
-  -moz-border-radius   : 10;
-  border-radius        : 10px;
-  font-family          : Arial;
+  -webkit-border-radius: 15;
+  -moz-border-radius   : 15;
+  border-radius        : 15px;
   color                : #ffffff;
-  font-size            : 23px;
+  font-size            : 18px;
   padding              : 10px 16px 10px 20px;
   text-decoration      : none;
 }
@@ -200,19 +201,23 @@ button:hover::before {
   text-decoration: none;
 }
 
-.desc-banner {
-  font-size: 1.5rem;
+.desc-banner-client {
+  font-size: 25px;
   color: #363a43;
-  font-family: "Raleway", sans-serif;
   width: 100%;
   text-align: center;
-  margin-top: 1px;
+  padding: 16px;
+}
+
+.many-othes{
+  padding: 40px;
+}
+
+.img-logo-client{
+  width: 20%;
 }
 
 @media screen and (max-width: 963px) {
-  .section {
-    padding: 50px 20px;
-  }
 
   .wrapper {
     display              : grid;
@@ -220,9 +225,16 @@ button:hover::before {
   }
 
   .txt-check {
-    font-family: "Exo 2", sans-serif;
-    font-size  : 1.5rem;
+    font-size  : 30px;
     font-weight: 700;
+  }
+
+  .card-banner-client{
+    height: auto;
+  }
+
+  .img-logo-client{
+    width: 60%;
   }
 }
 

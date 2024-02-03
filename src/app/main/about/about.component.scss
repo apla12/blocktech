@@ -8,7 +8,7 @@
  }
 
  .section {
-   padding: 50px 50px;
+   padding: 0 25px;
  }
 
  .color {
@@ -36,13 +36,12 @@
  }
 
  .title {
-   padding-bottom: 60px;
+   padding-top   : 50px;
+   padding-bottom: 50px;
  }
 
  .title h2 {
    text-transform: capitalize;
-   font-weight   : 700;
-   font-size     : 38px;
    color         : #fff;
  }
 
@@ -50,12 +49,26 @@
    color: #eb7625;
  }
 
- .title p {
-   color: #666;
- }
-
  .title.title-white h2 {
    color: #fff;
+ }
+
+ .title-card-about {
+   width          : 100%;
+   display        : flex;
+   flex-direction : row;
+   justify-content: center;
+   color          : #dee2e6;
+   font-size      : 16px;
+   padding        : 20px 0 20px 0;
+   font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
+ }
+
+ .desc-card-about {
+   color      : #dee2e6;
+   font-size  : 15px;
+   padding    : 10px 0 10px 0;
+   font-family: 'Effra-Regular', Arial, Helvetica, sans-serif !important;
  }
 
  .about .block {
@@ -64,6 +77,7 @@
    border-bottom: 2px solid transparent;
    transition   : 0.5s all;
    margin-bottom: 20px;
+   border-radius: 15px;
  }
 
  .about .block:hover {
@@ -138,7 +152,7 @@
 
  .call-to-action-about .btn-main {
    margin       : 20px 20px 20px 20px;
-   border-radius: 10px;
+   border-radius: 15px;
  }
 
  .section-sm {
@@ -158,48 +172,47 @@
  }
 
  .bg-1-about {
-   background-image     : url("../../../assets/img/fundo02.png");
-   background-repeat    : no-repeat;
-   background-size      : cover;
-   background-position  : top;
-   inset                : 0;
-   z-index              : -1;
+   background-image   : url("../../../assets/img/fundo02.png");
+   background-repeat  : no-repeat;
+   background-size    : cover;
+   background-position: top;
+   inset              : 0;
+   z-index            : -1;
  }
 
- .btn {
+ .btn-about {
    background-color: transparent;
    color           : #fff;
    padding         : 10px 30px;
-   border-radius   : 0;
+   border-radius   : 15px;
    transition      : all 0.3s ease-in 0s;
  }
 
- .btn:focus {
+ .btn-about:focus {
    color     : #ddd;
    box-shadow: none;
  }
 
- .btn.active:focus,
- .btn:active:focus,
- .btn:focus {
+ .btn-about.active:focus,
+ .btn-about:active:focus,
+ .btn-about:focus {
    outline: 0;
  }
 
- .btn-main {
-   background               : #eb7625;
-   background-image         : -webkit-linear-gradient(top, #eb6516, #ec8c55);
-   background-image         : -moz-linear-gradient(top, #eb6516, #ec8c55);
-   background-image         : -ms-linear-gradient(top, #eb6516, #ec8c55);
-   background-image         : -o-linear-gradient(top, #eb6516, #ec8c55);
-   background-image         : linear-gradient(to bottom, #eb6516, #ec8c55);
-   -webkit-border-radius    : 10;
-   -moz-border-radius       : 10;
-   border-radius            : 10px;
-   font-family              : Arial;
-   color                    : #ffffff;
-   font-size                : 23px;
-   padding                  : 10px 16px 10px 20px;
-   text-decoration          : none;
+ .btn-main-about {
+   background           : #eb7625;
+   background-image     : -webkit-linear-gradient(top, #eb6516, #ec8c55);
+   background-image     : -moz-linear-gradient(top, #eb6516, #ec8c55);
+   background-image     : -ms-linear-gradient(top, #eb6516, #ec8c55);
+   background-image     : -o-linear-gradient(top, #eb6516, #ec8c55);
+   background-image     : linear-gradient(to bottom, #eb6516, #ec8c55);
+   -webkit-border-radius: 15;
+   -moz-border-radius   : 15;
+   border-radius        : 15px;
+   color                : #ffffff;
+   font-size            : 18px;
+   padding              : 10px 16px 10px 20px;
+   text-decoration      : none;
  }
 
  .btn-main:hover {
@@ -213,34 +226,30 @@
  }
 
  .desc-banner-titulo {
-   font-size    : 4rem;
-   color        : #363a43;
-   font-family  : 'Raleway', sans-serif;
-   width        : 100%;
-   text-align   : center;
-   font-weight  : 800;
+   font-size  : 45px;
+   color      : #363a43;
+   width      : 100%;
+   text-align : center;
+   font-weight: 800;
+   font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
  }
 
  .desc-banner {
-   font-size    : 2.5rem;
-   color        : #363a43;
-   font-family  : 'Raleway', sans-serif;
-   width        : 100%;
-   text-align   : center;
-   margin-top   : -24px;
+   font-size : 25px;
+   color     : #363a43;
+   width     : 100%;
+   text-align: center;
+   margin-top: -24px;
+   font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
  }
 
  @media screen and (max-width: 963px) {
-   .section {
-     padding: 50px 20px;
-   }
 
    .about-2 .content-block {
      padding: 40px 15px;
    }
 
    .desc-banner[_ngcontent-wrd-c29] {
-     font-family: "Open Sans Condensed", sans-serif;
      text-shadow: 1px 1px 2px #363a43;
      width      : 100%;
      text-align : center;

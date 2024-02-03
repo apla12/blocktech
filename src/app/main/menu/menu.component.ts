@@ -6,6 +6,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class MenuComponent {
-  isCollapsed = true;
-}
+export class MenuComponent {}

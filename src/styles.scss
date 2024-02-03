@@ -1,6 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-@import '~bootstrap-icons/font/bootstrap-icons.css';
-
 html,
 body {
   height: 100%;
@@ -8,14 +5,40 @@ body {
 
 body {
   margin     : 0 0 0 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'LEMONMILK-Light', Arial, Helvetica, sans-serif;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@font-face {
+  font-family: 'LEMONMILK-Medium';
+  src        : url('assets/font/lemon-milk/LEMONMILK-Medium.otf') format('truetype');
+}
 
-/* Importing Bootstrap SCSS file. */
-@import "./node_modules/bootstrap/scss/bootstrap";
+@font-face {
+  font-family: 'LEMONMILK-Bold';
+  src        : url('assets/font/lemon-milk/LEMONMILK-Bold.otf') format('truetype');
+}
 
-/* Importing Datepicker SCSS file. */
-@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+@font-face {
+  font-family: 'LEMONMILK-Light';
+  src        : url('assets/font/lemon-milk/LEMONMILK-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LEMONMILK-Regular';
+  src        : url('assets/font/lemon-milk/LEMONMILK-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Effra-Medium';
+  src        : url('assets/font/Trial_effra/TrialStaticFonts/Effra_Trial_Md.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Effra-Regular';
+  src        : url('assets/font/Trial_effra/TrialStaticFonts/Effra_Trial_Rg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Effra-Bold';
+  src        : url('assets/font/Trial_effra/TrialStaticFonts/Effra_Trial_Bd.ttf') format('truetype');
+}

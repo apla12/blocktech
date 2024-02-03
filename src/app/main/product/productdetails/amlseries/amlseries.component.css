@@ -8,23 +8,20 @@
 }
 
 .section {
-  padding: 50px 50px;
+  padding: 0 25px;
 }
 
 .color {
-  color       : #eb7625;
-  margin-left : 5px;
-  margin-right: 5px;
+  color: #eb7625;
 }
 
 .border {
-  border-top   : 2px solid #666666;
-  /* border-top: 2px solid rgba(236, 239, 241, 0.07); */
-  height       : 1px;
-  margin       : 15px auto 0;
-  position     : relative;
-  width        : 30%;
-  border       : 1px solid #dee2e6 !important;
+  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  height    : 1px;
+  margin    : 15px auto 0;
+  position  : relative;
+  width     : 30%;
+  border    : 1px solid #dee2e6 !important;
 }
 
 .border:before {
@@ -39,7 +36,7 @@
 }
 
 .title {
-  width         : 100%;
+  padding-top   : 50px;
   padding-bottom: 50px;
 }
 
@@ -138,9 +135,10 @@
 
 .details-install {
   color      : #afbac4;
-  font-size  : 14px;
+  font-size  : 17px;
+  font-weight: 500 !important;
   padding    : 20px 0 20px 20px;
-  font-weight: 400 !important;
+  font-family: 'Effra-Regular', Arial, Helvetica, sans-serif !important;
 }
 
 .img-install {

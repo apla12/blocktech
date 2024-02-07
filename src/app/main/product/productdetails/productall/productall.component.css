@@ -1,0 +1,26 @@
+.titleAllProduct {
+  padding-top   : 50px;
+  padding-bottom: 10px;
+}
+
+.titleAllProduct h2 {
+  text-transform: capitalize;
+  font-weight   : 700;
+  font-size     : 25px;
+  color         : #fff;
+}
+
+.titleAllProduct h2 span {
+  color: #eb7625;
+}
+
+.color {
+  color: #eb7625;
+}
+
+@media screen and (max-width: 963px) {
+
+  .titleAllProduct h2 {
+    font-size     : 15px;
+  }
+}

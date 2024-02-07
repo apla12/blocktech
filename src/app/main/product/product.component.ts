@@ -1,7 +1,12 @@
-import { Component, ViewChild, ViewContainerRef, ViewEncapsulation } from '@angular/core';
-import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { AmlseriesComponent } from './productdetails/amlseries/amlseries.component';
+import {
+  Component,
+  ViewChild,
+  ViewContainerRef,
+  ViewEncapsulation,
+} from '@angular/core';
 import { Router } from '@angular/router';
+import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { AMLseriesComponent } from './productdetails/AMLseries/AMLseries.component';
 
 @Component({
   selector: 'app-product',
@@ -19,10 +24,10 @@ export class ProductComponent {
   constructor(private router: Router) {}
 
   loadAMLSeries() {
-    const componentRef = this.container.createComponent(AmlseriesComponent);
+    const componentRef = this.container.createComponent(AMLseriesComponent);
   }
 
-  goAmlseries(){
+  goAmlseries() {
     this.router.navigate(['/aml-series']);
   }
 }

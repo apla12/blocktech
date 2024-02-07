@@ -1,6 +1,5 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { TabsetComponent } from 'ngx-bootstrap/tabs';
 
 @Component({
@@ -11,10 +10,6 @@ import { TabsetComponent } from 'ngx-bootstrap/tabs';
 })
 export class BtaseriesComponent {
   check = faCheck;
-
-  constructor() {}
-
-  ngOnInit() {}
 
   @ViewChild('staticTabs', { static: false }) staticTabs?: TabsetComponent;
 

@@ -4,11 +4,11 @@ import { TabsetComponent } from 'ngx-bootstrap/tabs';
 
 @Component({
   selector: 'app-amlseries',
-  templateUrl: './amlseries.component.html',
-  styleUrls: ['./amlseries.component.css'],
+  templateUrl: './AMLseries.component.html',
+  styleUrls: ['./AMLseries.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class AmlseriesComponent implements OnInit {
+export class AMLseriesComponent implements OnInit {
   check = faCheck;
 
   constructor() {}
@@ -20,8 +20,8 @@ export class AmlseriesComponent implements OnInit {
   slideChangeMessage = '';
 
   slides: { image: string; text?: string }[] = [
-    { image: '../../../../../assets/img/product/AML/AML-45.png' },
     { image: '../../../../../assets/img/product/AML/AML-45.50.png' },
+    { image: '../../../../../assets/img/product/AML/AML-45.png' },
     { image: '../../../../../assets/img/product/AML/AML-90.50.png' },
     { image: '../../../../../assets/img/product/AML/AML-90.png' },
   ];
@@ -36,13 +36,17 @@ export class AmlseriesComponent implements OnInit {
   log(event: number) {
     setTimeout(() => {
       if (event === 0) {
-        this.slideChangeMessage = 'TEXTO PRIMEIRA IMAGEM';
+        this.slideChangeMessage =
+          'O tubo de esgoto deve ser cortado e ficar exatamente igualado com a parede. Não pode ter nenhum pedaço de tubo para fora da parede.';
       } else if (event === 1) {
-        this.slideChangeMessage = 'TEXTO SEGUNDA IMAGEM';
+        this.slideChangeMessage =
+          'Seção cilíndrica do acabamento estético BLOCKTECH com inclinação de 45⁰ que será encaixada no tubo de esgoto com diâmetro de 50 ou 40 mm.';
       } else if (event === 2) {
-        this.slideChangeMessage = 'TEXTO TERCEIRA IMAGEM';
+        this.slideChangeMessage =
+          'Produto está sendo apenas encaixado no tubo de esgoto com  diâmetro de 50 ou 40 mm. Não precisa de nenhum tipo de cola ou fita veda rosca para a instalação.';
       } else if (event === 3) {
-        this.slideChangeMessage = 'TEXTO QUARTA IMAGEM';
+        this.slideChangeMessage =
+          'Produto já instalado e pronto para receber a tubulação corrugada da máquina de lavar roupa.';
       }
     });
   }
@@ -52,4 +56,5 @@ export class AmlseriesComponent implements OnInit {
       this.staticTabs.tabs[tabId].active = true;
     }
   }
+
 }

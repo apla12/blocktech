@@ -71,6 +71,20 @@
    font-family: 'Effra-Regular', Arial, Helvetica, sans-serif !important;
  }
 
+ .block {
+   max-height: 39rem;
+   min-height: 31rem;
+ }
+
+//  .row>* {
+//    flex-shrink  : 0;
+//    width        : 100%;
+//    max-width    : 100%;
+//    padding-right: 0 !important;
+//    padding-left : 0 !important;
+//    margin-top   : 0 !important;
+//  }
+
  .about .block {
    background   : #242930;
    padding      : 30px;
@@ -231,19 +245,24 @@
    width      : 100%;
    text-align : center;
    font-weight: 800;
-   font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
+   font-family: 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
  }
 
  .desc-banner {
-   font-size : 25px;
-   color     : #363a43;
-   width     : 100%;
-   text-align: center;
-   margin-top: -24px;
-   font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
+   font-size  : 25px;
+   color      : #363a43;
+   width      : 100%;
+   text-align : center;
+   margin-top : -24px;
+   font-family: 'LEMONMILK-Bold', Arial, Helvetica, sans-serif !important;
  }
 
  @media screen and (max-width: 963px) {
+
+   .block {
+     max-height: 100%;
+     min-height: 31rem;
+   }
 
    .about-2 .content-block {
      padding: 40px 15px;

@@ -19,15 +19,16 @@ import { HeaderComponent } from './main/header/header.component';
 import { MainComponent } from './main/main.component';
 import { MenuComponent } from './main/menu/menu.component';
 import { ProductComponent } from './main/product/product.component';
-import { AmlseriesComponent } from './main/product/productdetails/amlseries/amlseries.component';
+import { AMLseriesComponent } from './main/product/productdetails/AMLseries/AMLseries.component';
 import { BtaseriesComponent } from './main/product/productdetails/btaseries/btaseries.component';
 import { StoreComponent } from './main/store/store.component';
 
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BcseriesComponent } from './main/product/productdetails/bcseries/bcseries.component';
 import { BtseriesComponent } from './main/product/productdetails/btseries/btseries.component';
-import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
+import { ProductallComponent } from './main/product/productdetails/productall/productall.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
     FooterComponent,
     MainComponent,
 
-    AmlseriesComponent,
+    ProductallComponent,
+    AMLseriesComponent,
     BtaseriesComponent,
     BtseriesComponent,
     BcseriesComponent,

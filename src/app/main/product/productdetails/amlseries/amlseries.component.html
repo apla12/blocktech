@@ -1,4 +1,4 @@
-<section class="bg-one-aml amlseries section">
+<section id="aml" class="bg-one-aml amlseries section">
 
   <div class="col-12">
     <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
@@ -11,18 +11,18 @@
     <div class="img-prod col-4">
       <carousel (activeSlideChange)="log($event)" [interval]="0">
         <slide *ngFor="let slide of slides; let index=index">
-          <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+          <img [src]="slide.image" alt="image slide" class="imgs-product">
         </slide>
       </carousel>
     </div>
 
     <div class="col-8 desc-prod">
-      <div class="details-install">A linha de produtos AML foi desenvolvido com o objetivo de oferecer um acabamento
+      <div class="details-desc">A linha de produtos AML foi desenvolvido com o objetivo de oferecer um acabamento
         de qualidade para o ponto
         de despejo de água da máquina de lavar roupa. O material fornece um maior conforto estético visual para sua
         casa.</div>
 
-      <div class="details-install">
+      <div class="details-desc">
         Tamanhos disponíveis:
         <a (click)="selectTab(0)">
           <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>45AML50 - Inclinação de 45º com
@@ -46,10 +46,8 @@
     </div>
   </div>
 
-
   <div class="details row wow fadeInUp" data-wow-duration="500ms">
-
-    <div>
+    <div class="col-12">
       <tabset #staticTabs>
         <tab class="tab-details" heading="ESPECIFICAÇÃO">
           <div class="details-install">
@@ -67,31 +65,37 @@
             limpa. As fotos e o vídeo abaixo demonstram a instalação.
           </div>
           <div class="row details-prod">
+
             <div class="row img-install">
               <div class="col-4">
-                <carousel (activeSlideChange)="log($event)" [interval]="0">
-                  <slide *ngFor="let slide of slides_install; let index=index">
-                    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+                <carousel (activeSlideChange)="log($event)" [interval]="0" >
+                  <slide *ngFor="let slide of slides_install; let index=index" >
+                    <img [src]="slide.image" alt="image slide" class="imgs-product">
                   </slide>
                 </carousel>
               </div>
               <div class="col-8">
-                <div class="details-install">{{slideChangeMessage}}</div>
+                <div class="desc-step-install"><i>{{slideChangeMessage}}</i></div>
               </div>
             </div>
-            <div class="row">
+
+            <!-- <div class="row">
               <div class="col-6">
                 <iframe width="560" height="315"
                   src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
               </div>
-            </div>
+            </div> -->
             <div class="col-6"></div>
           </div>
         </tab>
       </tabset>
     </div>
-    <hr />
+    <div class="border-line"></div>
+  </div>
+
+  <div class="col-12">
+    <app-productall></app-productall>
   </div>
 </section>

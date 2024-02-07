@@ -92,7 +92,7 @@
 
 .tab-content {
   display   : block;
-  padding   : 25px 33rem 25px 25px;
+  padding   : 25px 25px 25px 25px;
   text-align: justify;
 }
 
@@ -113,7 +113,7 @@
   --bs-nav-link-font-weight   : ;
   --bs-nav-link-color         : #eb7625;
   --bs-nav-link-hover-color   : #737f8a;
-  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  --bs-nav-link-disabled-color: #969ea5;
   display                     : flex;
   flex-wrap                   : wrap;
   padding-left                : 0;
@@ -149,10 +149,10 @@
 
 .desc-step-install {
   color      : #afbac4;
-  font-size  : 17px;
+  font-size  : 14px;
   font-weight: 500 !important;
   font-family: 'Effra-Regular', Arial, Helvetica, sans-serif !important;
-  margin-top : 20px;
+  margin-top : 30px;
 }
 
 .img-install {
@@ -203,6 +203,11 @@
   border-radius: 15px;
 }
 
+.video {
+  width : 420px;
+  height: 340px;
+}
+
 @media screen and (max-width: 963px) {
 
   .col-4 {
@@ -213,6 +218,17 @@
   .col-8 {
     flex : 0 0 auto;
     width: 100%;
+  }
+
+  .col-3 {
+    flex : 0 0 auto;
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
   }
 
   .img-prod {
@@ -229,5 +245,5 @@
 
   .details {
     padding-top: 3rem;
-}
+  }
 }

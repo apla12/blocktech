@@ -29,6 +29,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BcseriesComponent } from './main/product/productdetails/bcseries/bcseries.component';
 import { BtseriesComponent } from './main/product/productdetails/btseries/btseries.component';
 import { ProductallComponent } from './main/product/productdetails/productall/productall.component';
+import { BEseriesComponent } from './main/product/productdetails/BEseries/BEseries.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ProductallComponent } from './main/product/productdetails/productall/pr
     BtaseriesComponent,
     BtseriesComponent,
     BcseriesComponent,
+    BEseriesComponent,
   ],
   imports: [
     FormsModule,
@@ -56,6 +58,7 @@ import { ProductallComponent } from './main/product/productdetails/productall/pr
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+
     NgxBootstrapIconsModule.pick(allIcons),
 
     provideFirebaseApp(() =>

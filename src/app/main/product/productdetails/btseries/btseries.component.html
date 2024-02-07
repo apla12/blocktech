@@ -9,7 +9,7 @@
       <div class="img-prod col-4">
         <carousel (activeSlideChange)="log($event)" [interval]="0">
           <slide *ngFor="let slide of slides; let index=index">
-            <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+            <img [src]="slide.image" alt="image slide" class="imgs-product">
           </slide>
         </carousel>
       </div>
@@ -19,7 +19,7 @@
           utilizados para eliminar 100% os entupimentos ocasionado por concreto, cimeto, argamassa, gesso, rejunte,
           detritos de obra no geral que possam cair acidentalmente nos tubos, prumadas.</div>
 
-        <div class="details-install">
+        <div class="details-desc">
           Tamanhos disponíveis:
           <a (click)="selectTab(0)">
             <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BT-150: Porduto utilizado para
@@ -45,10 +45,9 @@
       </div>
     </div>
 
-
     <div class="details row wow fadeInUp" data-wow-duration="500ms">
+      <div class="col-12">
 
-      <div>
         <tabset #staticTabs>
           <tab class="tab-details" heading="ESPECIFICAÇÃO">
             <div class="details-install">
@@ -137,33 +136,38 @@
               40mm.<br />
 
             </div>
-            <!-- <div class="row details-prod">
+            <div class="row details-prod">
               <div class="row img-install">
-                <div class="col-4">
-                  <carousel (activeSlideChange)="log($event)" [interval]="0">
-                    <slide *ngFor="let slide of slides_install; let index=index">
-                      <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
-                    </slide>
-                  </carousel>
+                <div class="col-4 text-center">
+                  <!-- <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BT/" type="video/mp4">
+                  </video> -->
                 </div>
-                <div class="col-8">
-                  <div class="details-install">{{slideChangeMessage}}</div>
+                <div class="col-4 text-center">
+                  <!-- <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BT/" type="video/mp4">
+                  </video> -->
+                </div>
+                <div class="col-4 text-center">
+                  <!-- <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BT/" type="video/mp4">
+                  </video> -->
                 </div>
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <iframe width="560" height="315"
-                    src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
-                </div>
-              </div>
-              <div class="col-6"></div>
-            </div> -->
+            </div>
+
           </tab>
         </tabset>
       </div>
-      <hr />
+      <div class="border-line"></div>
+    </div>
+
+    <div class="col-12">
+      <app-productall></app-productall>
     </div>
   </div>
+
 </section>

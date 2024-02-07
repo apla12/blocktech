@@ -9,7 +9,7 @@
       <div class="img-prod col-4">
         <carousel (activeSlideChange)="log($event)" [interval]="0">
           <slide *ngFor="let slide of slides; let index=index">
-            <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+            <img [src]="slide.image" alt="image slide" class="imgs-product">
           </slide>
         </carousel>
       </div>
@@ -21,34 +21,45 @@
           geral que possam acidentalmente cair nos pontos dos vasos sanitários, dos ralos da cozinha, dos ralos dos
           banheiros e dos ralos dos chuveiros gerando a obstrução de uma determinada parte da prumada de esgoto.</div>
 
-        <div class="details-install">
+        <div class="details-desc">
           Tamanhos disponíveis:
-          <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-100 - Produto utilizado para
-            eliminar o entupimento dos pontos de esgoto com diâmetro
-            de 100mm dos ralos e vasos sanitários.</div>
-          <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-150 - Produto utilizado para
-            eliminar o entupimento dos pontos de esgoto com diâmetro
-            de 150mm dos ralos sifonados.</div>
+          <a (click)="selectTab(0)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-100 - Produto utilizado para
+              eliminar o entupimento dos pontos de esgoto com diâmetro
+              de 100mm dos ralos e vasos sanitários.</div>
+          </a>
+          <a (click)="selectTab(1)">
+            <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>BTA-150 - Produto utilizado para
+              eliminar o entupimento dos pontos de esgoto com diâmetro
+              de 150mm dos ralos sifonados.</div>
+          </a>
         </div>
       </div>
     </div>
 
     <div class="details row wow fadeInUp" data-wow-duration="500ms">
-      <div>
+      <div class="col-12">
+
         <tabset #staticTabs>
           <tab class="tab-details" heading="ESPECIFICAÇÃO">
             <div class="details-install">
-              BTA-100<br/>
-              O Bloqueador temporário universal apresenta uma alça para o rompimento manual da parte circular superior.<br/>
-              O produto apresenta um orifício de 40mm que é aberto quando necessário realizar o escoamento da água do teste hidrostático e fechado logo após pelo tamponador de 40mm.<br/>
-              O material apresenta um dispositivo que liga o tamponador de 40mm ao bloqueador temporário universal de 100mm.<br/>
+              BTA-100<br />
+              O Bloqueador temporário universal apresenta uma alça para o rompimento manual da parte circular
+              superior.<br />
+              O produto apresenta um orifício de 40mm que é aberto quando necessário realizar o escoamento da água do
+              teste hidrostático e fechado logo após pelo tamponador de 40mm.<br />
+              O material apresenta um dispositivo que liga o tamponador de 40mm ao bloqueador temporário universal de
+              100mm.<br />
 
               <hr>
 
-              BTA-150<br/>
-              O Bloqueador temporário universal apresenta duas alças para facilitar aind mais o rompimento manual da parte circular superior.<br/>
-              O produto apresenta um orifício de 40mm que é aberto quando necessário para o escoamento da água do teste hidrostático e fechado logo após pelo tamponador de 40mm.<br/>
-              O material apresenta um dispositivo que liga o tamponador de 40mm ao bloqueador temporário universal de 150mm.
+              BTA-150<br />
+              O Bloqueador temporário universal apresenta duas alças para facilitar aind mais o rompimento manual da
+              parte circular superior.<br />
+              O produto apresenta um orifício de 40mm que é aberto quando necessário para o escoamento da água do teste
+              hidrostático e fechado logo após pelo tamponador de 40mm.<br />
+              O material apresenta um dispositivo que liga o tamponador de 40mm ao bloqueador temporário universal de
+              150mm.
             </div>
           </tab>
 
@@ -59,35 +70,39 @@
               caixa de madeira, espuma como passagem na laje ou até mesmo com as construtoras que realizam a perfuração
               em concreto, ou seja, o produto pode ser instalado em TODAS as metodologias da construção civil.
             </div>
-            <!--
+
             <div class="row details-prod">
               <div class="row img-install">
-                <div class="col-4">
-                  <carousel (activeSlideChange)="log($event)" [interval]="0">
-                    <slide *ngFor="let slide of slides_install; let index=index">
-                      <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
-                    </slide>
-                  </carousel>
+                <div class="col-4 text-center">
+                  <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BTA/videos/btaseries-install-1.mp4" type="video/mp4">
+                  </video>
                 </div>
-                <div class="col-8">
-                  <div class="details-install">{{slideChangeMessage}}</div>
+                <div class="col-4 text-center">
+                  <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BTA/videos/btaseries-install-2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="w-100 mb-3">DESC VIDEO</div>
+                  <video id="video" controls preload="metadata" class="video">
+                    <source src="../../../../../assets/img/product/BTA/videos/btaseries-install-3.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <iframe width="560" height="315"
-                    src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
-                </div>
-              </div>
-              <div class="col-6"></div>
             </div>
-             -->
+
           </tab>
         </tabset>
       </div>
-      <hr />
+      <div class="border-line"></div>
+    </div>
+
+    <div class="col-12">
+      <app-productall></app-productall>
     </div>
   </div>
+
 </section>

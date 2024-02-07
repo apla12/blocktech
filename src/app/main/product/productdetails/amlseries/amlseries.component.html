@@ -47,7 +47,7 @@
   </div>
 
   <div class="details row wow fadeInUp" data-wow-duration="500ms">
-    <div class="col-12">
+    <div class="col-12 d-flex">
       <tabset #staticTabs>
         <tab class="tab-details" heading="ESPECIFICAÇÃO">
           <div class="details-install">
@@ -65,29 +65,25 @@
             limpa. As fotos e o vídeo abaixo demonstram a instalação.
           </div>
           <div class="row details-prod">
-
             <div class="row img-install">
               <div class="col-4">
-                <carousel (activeSlideChange)="log($event)" [interval]="0" >
-                  <slide *ngFor="let slide of slides_install; let index=index" >
+                <video id="video" controls preload="metadata" class="video">
+                  <source src="../../../../../assets/img/product/AML/videos/amlseries-install.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-3">
+                <carousel (activeSlideChange)="log($event)" [interval]="0">
+                  <slide *ngFor="let slide of slides_install; let index=index">
                     <img [src]="slide.image" alt="image slide" class="imgs-product">
                   </slide>
                 </carousel>
               </div>
-              <div class="col-8">
+              <div class="col-4">
                 <div class="desc-step-install"><i>{{slideChangeMessage}}</i></div>
               </div>
             </div>
 
-            <!-- <div class="row">
-              <div class="col-6">
-                <iframe width="560" height="315"
-                  src="https://www.youtube-nocookie.com/embed/8MgvpDUxvE4?si=jK39LEItcsOYpTbK"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;fullscreen;"></iframe>
-              </div>
-            </div> -->
-            <div class="col-6"></div>
           </div>
         </tab>
       </tabset>

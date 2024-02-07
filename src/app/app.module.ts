@@ -30,6 +30,10 @@ import { BcseriesComponent } from './main/product/productdetails/bcseries/bcseri
 import { BtseriesComponent } from './main/product/productdetails/btseries/btseries.component';
 import { ProductallComponent } from './main/product/productdetails/productall/productall.component';
 import { BEseriesComponent } from './main/product/productdetails/BEseries/BEseries.component';
+import { BLseriesComponent } from './main/product/productdetails/BLseries/BLseries.component';
+import { BARseriesComponent } from './main/product/productdetails/BARseries/BARseries.component';
+import { BRLseriesComponent } from './main/product/productdetails/BRLseries/BRLseries.component';
+import { PFLseriesComponent } from './main/product/productdetails/PFLseries/PFLseries.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import { BEseriesComponent } from './main/product/productdetails/BEseries/BEseri
     BtseriesComponent,
     BcseriesComponent,
     BEseriesComponent,
+    BLseriesComponent,
+    BARseriesComponent,
+    BRLseriesComponent,
+    PFLseriesComponent
   ],
   imports: [
     FormsModule,

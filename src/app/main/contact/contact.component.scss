@@ -1,5 +1,5 @@
 .contact {
-  height          : auto;
+  height: auto;
 }
 
 .bg-one-contact {
@@ -31,7 +31,7 @@
 }
 
 .title {
-  padding-top: 50px;
+  padding-top   : 50px;
   padding-bottom: 50px;
 }
 
@@ -54,12 +54,13 @@
   color: #fff;
 }
 
-.txt_title_contact{
+.txt_title_contact {
   font-size: 25px;
 }
 
-.txt_desc_contact{
-  font-family: 'Effra-Medium';
+.txt_desc_contact {
+  font-family  : 'Effra-Regular', Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
 }
 
 .call-to-action-contact {
@@ -83,21 +84,41 @@
 
 .bg-1-contact {
   background-color: #242930;
-  // background-image : url("../../../assets/img/banner2.png");
-  // background-repeat: no-repeat;
-  // background-size  : cover;
-  // opacity          : 0.8;
 }
 
 .contact-info {
   color        : #afbac4;
   margin-bottom: 25px;
-  text-align: justify;
+  text-align   : justify;
 }
 
-.con-info {
-  margin-bottom: 20px;
+i-bs {
+  width : 1rem;
+  height: 1rem;
+  color : #eb7625;
 }
+
+.contact-details {
+  display: inline-flex;
+  padding: 8px 0 0 13px;
+  width  : 100%;
+}
+
+.contact-details-icon {
+  width        : 5%;
+  padding-right: 25px;
+}
+
+.contact-details-txt {
+  font-family: 'Effra-Regular', Arial, Helvetica, sans-serif;
+  font-size  : 15px;
+  width      : 80%;
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
 
 .con-info i,
 .con-info span {
@@ -110,6 +131,7 @@
 
 .contact-form {
   margin-bottom: 60px;
+  font-family  : 'Effra-Medium', Arial, Helvetica, sans-serif;
 }
 
 .contact-form .form-control {
@@ -151,7 +173,7 @@
 
 input::placeholder,
 textarea::placeholder {
-  color: #afbac4 !important;
+  color    : #afbac4 !important;
   font-size: 12px;
 }
 
@@ -171,4 +193,11 @@ textarea::placeholder {
   display         : none;
   font-size       : 13px;
   padding         : 10px;
+}
+
+@media screen and (max-width: 963px) {
+  .contact-details-txt {
+    font-size  : 14px;
+    width      : 100%;
+  }
 }

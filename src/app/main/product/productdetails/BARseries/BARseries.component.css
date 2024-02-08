@@ -208,6 +208,12 @@
   height: 340px;
 }
 
+
+.temp {
+  width     : 17%;
+  text-align: center;
+}
+
 @media screen and (max-width: 963px) {
 
   .col-4 {
@@ -245,6 +251,12 @@
 
   .details {
     padding-top: 3rem;
+  }
+
+
+  .temp {
+    width     : 80%;
+    text-align: center;
   }
 }
 

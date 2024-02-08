@@ -7,6 +7,7 @@ import {
   Validators,
 } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import { IconNamesEnum } from 'ngx-bootstrap-icons';
 
 @Component({
   selector: 'app-contact',
@@ -16,6 +17,8 @@ import emailjs from '@emailjs/browser';
 })
 export class ContactComponent {
   submitted = false;
+
+  public iconNames = IconNamesEnum;
 
   form!: FormGroup;
 

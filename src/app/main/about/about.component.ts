@@ -6,6 +6,7 @@ import {
   faLineChart,
   faPenRuler,
 } from '@fortawesome/free-solid-svg-icons';
+import { IconNamesEnum } from 'ngx-bootstrap-icons';
 
 @Component({
   selector: 'app-about',
@@ -19,4 +20,6 @@ export class AboutComponent {
   anchor = faAnchor;
   check = faCheck;
   doers = faLineChart;
+
+  public iconNames = IconNamesEnum;
 }

@@ -4,17 +4,19 @@
 
       <div class="col-12">
         <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-          <h2>Get In <span class="color">Touch</span> </h2>
+          <!-- <h2>Get In <span class="color">Touch</span> </h2> -->
+          <h2>Entrar em <span class="color">contato</span> </h2>
           <div class="border"></div>
         </div>
       </div>
 
       <div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
-        <div class="txt_title_contact">Contact Details</div>
-        <div class="txt_desc_contact">Through technical visits, we analyse the standard operating process, provide
-          solutions and gather the
-          information needed to create the customised product. Contact us and find out how our solutions can help make
-          your project more efficient.</div>
+        <!-- <div class="txt_title_contact">Contact Details</div> -->
+        <div class="txt_title_contact">Detalhes do contato</div>
+        <!-- <div class="txt_desc_contact">Through technical visits, we analyse the standard operating process, provide solutions and gather the
+          information needed to create the customised product. Contact us and find out how our solutions can help make your project more efficient.</div> -->
+        <div class="txt_desc_contact">Através de visitas técnicas, analisamos o processo operacional padrão, fornecemos soluções e reunimos as
+          informações necessárias para criar o produto personalizado. Entre em contato conosco e descubra como nossas soluções podem ajudar a tornar seu projeto mais eficiente.</div>
 
         <div class="contact-details">
           <div class="contact-details-icon"><i-bs [name]="iconNames.Map"></i-bs></div>
@@ -28,12 +30,9 @@
           <div class="contact-details-txt">+ 55 (21) 9 9920 4545 / +351 912 243 534</div>
         </div>
         <div class="contact-details">
-          <div class="contact-details-icon"><i-bs [name]="iconNames.Mailbox"></i-bs></div>
+          <div class="contact-details-icon"><i-bs [name]="iconNames.Envelope"></i-bs></div>
           <div class="contact-details-txt">blocktech@blocktech.com.br</div>
         </div>
-
-
-
       </div>
 
       <div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -41,31 +40,35 @@
 
           <div class="form-group">
             <input type="text" class="form-control" name="name" id="name" formControlName="name" required
-              placeholder="Your Name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }">
+              placeholder="Seu nome" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }">
             <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
-              <div *ngIf="f['name'].errors['required']">Name is required</div>
+              <!-- <div *ngIf="f['name'].errors['required']">Name is required</div> -->
+              <div *ngIf="f['name'].errors['required']">O campo nome é obrigatório</div>
             </div>
           </div>
 
           <div class="form-group">
             <input type="email" class="form-control" name="email" id="email" formControlName="email" required
-              placeholder="Your email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
+              placeholder="Seu e-mail" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
             <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
-              <div *ngIf="f['email'].errors['required']">Email is required</div>
-              <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+              <!-- <div *ngIf="f['email'].errors['required']">Email is required</div> -->
+              <div *ngIf="f['email'].errors['required']">O campo e-mail é obrigatório</div>
+              <!-- <div *ngIf="f['email'].errors['email']">Email is invalid</div> -->
+              <div *ngIf="f['email'].errors['email']">Email inválido</div>
             </div>
           </div>
 
           <div class="form-group">
             <textarea rows="6" class="form-control" name="message" id="message" formControlName="message" required
-              placeholder="Your message" [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"></textarea>
+              placeholder="Sua mensagem" [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"></textarea>
             <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
-              <div *ngIf="f['message'].errors['required']">Message is required</div>
+              <!-- <div *ngIf="f['message'].errors['required']">Message is required</div> -->
+              <div *ngIf="f['message'].errors['required']">O campo mensagem é obrigatório</div>
             </div>
           </div>
 
           <div id="cf-submit">
-            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Enviar">
           </div>
         </form>
       </div>

@@ -25,6 +25,8 @@
       <div class="details-desc">
         Tamanhos disponíveis:
         <a (click)="selectTab(0)">
+          <!-- <i-bs name="check-all" width="75" height="75">
+          </i-bs> -->
           <div class="closed"><fa-icon [icon]="check" class="icon-check"></fa-icon>45AML50 - Inclinação de 45º com
             diâmetro de 50mm.</div>
         </a>
@@ -68,7 +70,7 @@
             <div class="row img-install">
 
               <div class="col-12 text-justify text-center">
-                <video id="video" controls preload="metadata" class="video">
+                <video id="video" controls preload="none" class="video" muted>
                   <source src="../../../../../assets/img/product/AML/videos/amlseries-install.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>

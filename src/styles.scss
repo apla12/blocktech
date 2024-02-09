@@ -8,6 +8,16 @@ body {
   font-family: 'LEMONMILK-Light', Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color          : #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color          : #363a43;
+}
+
 @font-face {
   font-family: 'LEMONMILK-Medium';
   src        : url('assets/font/lemon-milk/LEMONMILK-Medium.otf') format('truetype');

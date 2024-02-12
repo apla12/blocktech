@@ -5,6 +5,7 @@
 .bg-one-be {
   background-color: #252a31;
   color           : #afbac4;
+  overflow        : hidden;
 }
 
 .section {

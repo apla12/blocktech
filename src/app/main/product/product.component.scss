@@ -3,8 +3,8 @@
     height          : auto;
   }
 
-  .section {
-    padding: 0 25px;
+  .section-product {
+    padding: 0 25px 40px 25px;
   }
 
   .color {
@@ -173,7 +173,7 @@
   }
 
   .bg-1-product {
-    background-image : url("../../../assets/img/fundo012.png");
+    background-image : url("../../../assets/img/parceiros/fundo-parceiro.png");
     background-repeat: no-repeat;
     background-size  : cover;
     opacity          : 0.9;
@@ -182,14 +182,17 @@
   }
 
   .parceiro-class h2 {
-    color         : #ffffff;
-    font-size     : 47px;
-    font-weight   : 900;
-    margin        : 0 0 0;
-    padding       : 10px 10px;
-    text-align    : center;
-    text-transform: uppercase;
-    text-shadow   : 1px 1px 1px rgb(54 58 67);
+    color          : #ffffff;
+    font-size      : 47px;
+    font-weight    : 900;
+    margin         : 0 0 0;
+    padding        : 10px 10px;
+    text-align     : center;
+    text-transform : uppercase;
+    text-shadow    : 1px 1px 1px rgb(54 58 67);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
   }
 
   .parceiro-class {
@@ -197,13 +200,12 @@
     justify-content: center;
     width          : 100%;
     padding-top    : 20px;
-    font-family: 'LEMONMILK-Bold', Arial, Helvetica, sans-serif ;
+    font-family    : 'LEMONMILK-Bold', Arial, Helvetica, sans-serif;
   }
 
   .parceiro-img-class {
-    width         : 100%;
-    text-align    : center !important;
-    padding-bottom: 20px;
+    width     : 100%;
+    text-align: center !important;
   }
 
   .img-parceiro {
@@ -213,12 +215,12 @@
   @media screen and (max-width: 991px) {
 
     .parceiro-class h2 {
-      font-size  : 26px;
+      font-size  : 34px;
       font-weight: 700;
     }
 
     .img-parceiro {
-      width: 80%;
+      width: 70%;
     }
 
     .card {

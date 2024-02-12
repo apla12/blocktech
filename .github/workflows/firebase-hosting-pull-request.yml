@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOCKTECH_AB970 }}'
-          projectId: blocktech-ab970
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOCKTECH_C88A6 }}'
+          projectId: blocktech-c88a6

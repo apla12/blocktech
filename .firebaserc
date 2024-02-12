@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "blocktech-ab970"
-  }
+    "default": "blocktech-c88a6",
+    "blocktech": "blocktech-c88a6"
+  },
+  "targets": {},
+  "etags": {}
 }

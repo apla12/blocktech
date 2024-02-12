@@ -5,6 +5,7 @@
 .bg-one-aml {
   background-color: #252a31;
   color           : #afbac4;
+  overflow        : hidden;
 }
 
 .section {
@@ -226,8 +227,8 @@
   }
 
   .video {
-    width: 100%;
-    height: auto;
+    width        : 100%;
+    height       : auto;
     margin-bottom: 30px;
   }
 

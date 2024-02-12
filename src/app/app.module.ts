@@ -57,7 +57,7 @@ import { PFLseriesComponent } from './main/product/productdetails/PFLseries/PFLs
     BLseriesComponent,
     BARseriesComponent,
     BRLseriesComponent,
-    PFLseriesComponent
+    PFLseriesComponent,
   ],
   imports: [
     FormsModule,
@@ -71,13 +71,13 @@ import { PFLseriesComponent } from './main/product/productdetails/PFLseries/PFLs
 
     provideFirebaseApp(() =>
       initializeApp({
-        apiKey: 'AIzaSyC3_FHHfTiJnCKjCLdyQBESsoiNjh9lx6I',
-        authDomain: 'blocktech-ab970.firebaseapp.com',
-        projectId: 'blocktech-ab970',
-        storageBucket: 'blocktech-ab970.appspot.com',
-        messagingSenderId: '974151504471',
-        appId: '1:974151504471:web:fbb011d5301f4ca9e2c912',
-        measurementId: 'G-QXVEC98HHM',
+        apiKey: 'AIzaSyDmEh8qgdKCE2kv3hn7MbTkARJ255orZP4',
+        authDomain: 'blocktech-c88a6.firebaseapp.com',
+        projectId: 'blocktech-c88a6',
+        storageBucket: 'blocktech-c88a6.appspot.com',
+        messagingSenderId: '735171601511',
+        appId: '1:735171601511:web:8a4df6db06c1a35bfd20c2',
+        measurementId: 'G-KRWMJVGPSF',
       })
     ),
 

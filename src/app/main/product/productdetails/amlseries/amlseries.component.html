@@ -24,7 +24,7 @@
       </div>
 
       <div class="d-flex gap-2 flex-column">
-        <div class="details-desc">Selecione o Ângulo:</div>
+        <div class="details-desc">Selecione a inclinação:</div>
         <div class="d-flex gap-2">
           <button
             type="button"
@@ -34,7 +34,7 @@
             "
             (click)="setAnguloAtivo(0)"
           >
-            AML 45º
+            45º
           </button>
           <button
             type="button"
@@ -44,13 +44,41 @@
             "
             (click)="setAnguloAtivo(1)"
           >
-            AML 90º
+            90º
           </button>
         </div>
       </div>
 
       <div class="d-flex gap-2 flex-column">
-        <div class="details-desc">Selecione o Diâmetro:</div>
+        <div class="details-desc">Selecione o local de encaixe:</div>
+        <div class="d-flex gap-2">
+          <button
+            type="button"
+            class="btn"
+            [ngClass]="
+              encaixe === 0 ? 'btn-filled-secondary' : 'btn-outline-secondary'
+            "
+            (click)="setEncaixeAtivo(0)"
+          >
+            Tubo de esgoto
+          </button>
+
+          <button
+            type="button"
+            class="btn"
+            [ngClass]="
+              encaixe === 1 ? 'btn-filled-secondary' : 'btn-outline-secondary'
+            "
+            (click)="setEncaixeAtivo(1)"
+            [disabled]="angulo === 0"
+          >
+            Joelho de esgoto
+          </button>
+        </div>
+      </div>
+
+      <div class="d-flex gap-2 flex-column">
+        <div class="details-desc">Selecione o diâmetro:</div>
         <div class="d-flex gap-2">
           <button
             type="button"
@@ -73,45 +101,58 @@
           >
             50mm
           </button>
-
-          <button
-            type="button"
-            class="btn"
-            [ngClass]="
-              diametro === 2 ? 'btn-filled-secondary' : 'btn-outline-secondary'
-            "
-            (click)="setDiametroAtivo(2)"
-            [disabled]="angulo !== 1"
-          >
-            50mm Joelho
-          </button>
         </div>
       </div>
 
       <div class="details-desc" *ngIf="diametro !== -1">
         <p>Descrição:</p>
 
-        <div class="px-2" *ngIf="angulo === 0 && diametro === 0">
+        <div
+          class="px-2"
+          *ngIf="angulo === 0 && encaixe === 0 && diametro === 0"
+        >
           <fa-icon [icon]="check" class="icon-check"></fa-icon>45AML40 -
           Inclinação de 45º com diâmetro de 40mm.
         </div>
 
-        <div class="px-2" *ngIf="angulo === 0 && diametro === 1">
+        <div
+          class="px-2"
+          *ngIf="angulo === 0 && encaixe === 0 && diametro === 1"
+        >
           <fa-icon [icon]="check" class="icon-check"></fa-icon>45AML50 -
           Inclinação de 45º com diâmetro de 50mm.
         </div>
 
         <div
           class="px-2"
-          *ngIf="angulo === 1 && (diametro === 1 || diametro === 2)"
+          *ngIf="angulo === 1 && encaixe === 0 && diametro === 0"
         >
-          <fa-icon [icon]="check" class="icon-check"></fa-icon>90AML50 -
-          Inclinação de 90º com diâmetro de 50mm.
-        </div>
-
-        <div class="px-2" *ngIf="angulo === 1 && diametro === 0">
           <fa-icon [icon]="check" class="icon-check"></fa-icon>90AML40 -
           Inclinação de 90º com diâmetro de 40mm com anel ou sem anel.
+        </div>
+
+        <div
+          class="px-2"
+          *ngIf="angulo === 1 && encaixe === 0 && diametro === 1"
+        >
+          <fa-icon [icon]="check" class="icon-check"></fa-icon>90AML50 -
+          Inclinação de 90º com diâmetro de 50mm com anel ou sem anel.
+        </div>
+
+        <div
+          class="px-2"
+          *ngIf="angulo === 1 && encaixe === 1 && diametro === 0"
+        >
+          <fa-icon [icon]="check" class="icon-check"></fa-icon>90AML40J -
+          Inclinação de 90º com diâmetro de 40mm.
+        </div>
+
+        <div
+          class="px-2"
+          *ngIf="angulo === 1 && encaixe === 1 && diametro === 1"
+        >
+          <fa-icon [icon]="check" class="icon-check"></fa-icon>90AML50J -
+          Inclinação de 90º com diâmetro de 50mm.
         </div>
       </div>
 

@@ -1,41 +1,62 @@
-<div id="header">
-  <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
-    <div class="container-fluid">
-      <div class="navbar-brand">
-        <a href="#">
-          <img src="../../../assets/img/logo-preta.png" class="logo-menu" alt="logo">
-        </a>
-      </div>
-
-      <button id="menu-mobile" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item" [class.is-open]="isMenuOpen">
-            <a class="nav-link active" aria-current="page" href="">HOME</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#about">ABOUT</a> -->
-            <a class="nav-link" href="#about">SOBRE</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#product">PRODUCTS</a> -->
-            <a class="nav-link" href="#product">PRODUTOS</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#client">CLIENTS</a> -->
-            <a class="nav-link" href="#client">CLIENTES</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#contact">CONTACT</a> -->
-            <a class="nav-link" href="#contact">CONTATO</a>
-          </li>
-        </ul>
-      </div>
+<div class="header">
+  <div
+    class="header-wrapper d-flex justify-content-between align-items-center w-100"
+  >
+    <div class="navbar-brand">
+      <a href="#">
+        <img
+          src="../../../assets/img/logo-preta.png"
+          class="logo-menu"
+          alt="logo"
+        />
+      </a>
     </div>
-  </nav>
 
+    <div
+      class="hamburguer-menu flex-column gap-1"
+      [ngClass]="isMenuOpen ? 'open' : ''"
+      (click)="toggleMenu()"
+    >
+      <span class="hamburguer-line rounded"></span>
+      <span class="hamburguer-line rounded"></span>
+      <span class="hamburguer-line rounded"></span>
+      <span class="hamburguer-line rounded"></span>
+      <span class="hamburguer-line rounded"></span>
+    </div>
+
+    <div class="menu-wrapper" [ngClass]="isMenuOpen ? 'open' : ''">
+      <nav class="menu-nav d-flex gap-3">
+        <a
+          href="/"
+          (click)="selectMenuOption(0)"
+          [ngClass]="activeMenu === 0 ? 'active-menu' : ''"
+          >HOME</a
+        >
+        <a
+          href="/#about"
+          (click)="selectMenuOption(1)"
+          [ngClass]="activeMenu === 1 ? 'active-menu' : ''"
+          >SOBRE</a
+        >
+        <a
+          href="/#product"
+          (click)="selectMenuOption(2)"
+          [ngClass]="activeMenu === 2 ? 'active-menu' : ''"
+          >PRODUTOS</a
+        >
+        <a
+          href="/#client"
+          (click)="selectMenuOption(3)"
+          [ngClass]="activeMenu === 3 ? 'active-menu' : ''"
+          >CLIENTES</a
+        >
+        <a
+          href="#contact"
+          (click)="selectMenuOption(4)"
+          [ngClass]="activeMenu === 4 ? 'active-menu' : ''"
+          >CONTATO</a
+        >
+      </nav>
+    </div>
+  </div>
 </div>

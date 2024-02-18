@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-12 text-justify text-left">
     <div class="titleAllProduct wow fadeIn" data-wow-duration="1500ms">
-      <h2>Nossos <span class="color">Produtos</span> </h2>
+      <h2>Nossos <span class="color">Produtos</span></h2>
       <div class="borderHr"></div>
     </div>
   </div>
@@ -12,9 +12,14 @@
   [startFromIndex]="6"
   [interval]="myInterval"
   [isAnimated]="true"
-  [(activeSlide)]="activeSlideIndex">
-
-  <slide *ngFor="let slide of slides; let index=index">
-    <a [href]="slide.router"><img [src]="slide.image" alt="image slide" style="display: block; width: 100%;"></a>
+  [(activeSlide)]="activeSlideIndex"
+>
+  <slide *ngFor="let slide of slides; let index = index">
+    <a [href]="slide.router"
+      ><img
+        [src]="slide.image"
+        alt="image slide"
+        style="display: block; width: 100%"
+    /></a>
   </slide>
 </carousel>

@@ -80,8 +80,8 @@
 
 .card-title {
   font-size: 16px;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   color: #252a31;
   font-family: "LEMONMILK-Bold", Arial, Helvetica, sans-serif;
 }
@@ -89,14 +89,20 @@
 .card-text {
   font-size: 15px;
   color: #252a31;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   font-family: "Effra-Medium", Arial, Helvetica, sans-serif !important;
 }
 
 .img-card-product {
   border-radius: 15px 15px 0 0;
+}
+
+.venda-online {
+  width: fit-content;
+  background: #eb7625;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: xx-small;
 }
 
 .btn-main-product {
@@ -176,12 +182,12 @@ hr {
   content: "";
   width: 100vw;
   height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
+  // align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // position: relative;
 }
 
 .bg-1-product {
@@ -193,26 +199,10 @@ hr {
   z-index: -1;
 }
 
-.parceiro-class h2 {
-  color: #ffffff;
-  font-size: 47px;
-  font-weight: 900;
-  margin: 0 0 0;
-  padding: 10px 10px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px rgb(54 58 67);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .parceiro-class {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-top: 20px;
   font-family: "LEMONMILK-Bold", Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #ffffff;
 }
 
 .parceiro-img-class {
@@ -222,17 +212,75 @@ hr {
 
 .img-parceiro {
   width: 25%;
-  margin-right: 30px;
+  margin-right: 25px;
+}
+
+.btn-venda {
+  --color: #eb7625;
+  --color2: #ffffff;
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 8px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn-venda::after,
+.btn-venda::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn-venda::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-venda:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-venda:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn-venda:hover {
+  color: var(--color2);
+}
+
+.btn-venda:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
 }
 
 @media screen and (max-width: 991px) {
-  .parceiro-class h2 {
+  .parceiro-class {
     font-size: 34px;
     font-weight: 700;
   }
 
   .img-parceiro {
     width: 70%;
+    margin-bottom: 25px;
   }
 
   .card {

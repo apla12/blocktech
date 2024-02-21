@@ -5,7 +5,12 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBell,
+  faCheck,
+  faExclamationCircle,
+  faExclamationTriangle,
+} from '@fortawesome/free-solid-svg-icons';
 import { TabsetComponent } from 'ngx-bootstrap/tabs';
 
 @Component({
@@ -16,6 +21,7 @@ import { TabsetComponent } from 'ngx-bootstrap/tabs';
 })
 export class AMLseriesComponent implements OnInit {
   check = faCheck;
+  alert = faBell;
   @ViewChild('staticTabs', { static: false }) staticTabs?: TabsetComponent;
   slideChangeMessage = '';
   angulo = 0;
@@ -102,12 +108,12 @@ export class AMLseriesComponent implements OnInit {
       this.link_magazineluiza =
         'https://www.magazineluiza.com.br/acabamento-estetico-blocktech-45o-50mm-para-o-ponto-da-maquina-de-lavar/p/hbj94f997b/ed/pnpl/';
       this.link_americanas = '';
-    } else if (this.angulo === 1 && this.encaixe === 0 && this.diametro === 0) {
-      this.link_mercadolivre =
-        'https://blocktechcomercioeindustria.mercadoshops.com.br/MLB-4450001708-acabamento-blocktech-branco-90-40-p-ponto-da-maq-de-lavar-_JM?#item_id=MLB4450001708&component=tabbed_carrousel&page_from=home';
-      this.link_magazineluiza =
-        'https://www.magazineluiza.com.br/acabamento-estetico-blocktech-90o-40mm-para-o-ponto-da-maquina-de-lavar/p/ccaf59f837/ep/maco/';
-      this.link_americanas = '';
+      // } else if (this.angulo === 1 && this.encaixe === 0 && this.diametro === 0) {
+      //   this.link_mercadolivre =
+      //     'https://blocktechcomercioeindustria.mercadoshops.com.br/MLB-4450001708-acabamento-blocktech-branco-90-40-p-ponto-da-maq-de-lavar-_JM?#item_id=MLB4450001708&component=tabbed_carrousel&page_from=home';
+      //   this.link_magazineluiza =
+      //     'https://www.magazineluiza.com.br/acabamento-estetico-blocktech-90o-40mm-para-o-ponto-da-maquina-de-lavar/p/ccaf59f837/ep/maco/';
+      //   this.link_americanas = '';
     } else if (this.angulo === 1 && this.encaixe === 0 && this.diametro === 1) {
       this.link_mercadolivre =
         'https://blocktechcomercioeindustria.mercadoshops.com.br/MLB-4450000254-acabamento-blocktech-branco-90-50-p-ponto-da-maq-de-lavar-_JM?#item_id=MLB4450000254&component=tabbed_carrousel&page_from=home';
@@ -116,9 +122,9 @@ export class AMLseriesComponent implements OnInit {
       this.link_americanas = '';
     } else if (this.angulo === 1 && this.encaixe === 1 && this.diametro === 0) {
       this.link_mercadolivre =
-        'https://blocktechcomercioeindustria.mercadoshops.com.br/MLB-3599003229-acabamento-blocktech-90-50j-pponto-da-maq-de-lavar-_JM?#item_id=MLB3599003229&component=tabbed_carrousel&page_from=home';
+        'https://blocktechcomercioeindustria.mercadoshops.com.br/MLB-4450001708-acabamento-blocktech-branco-90-40-p-ponto-da-maq-de-lavar-_JM?#item_id=MLB4450001708&component=tabbed_carrousel&page_from=home';
       this.link_magazineluiza =
-        'https://www.magazineluiza.com.br/acabamento-estetico-blocktech-90o-50j-mm-para-o-ponto-da-maquina-de-lavar/p/kgh8gd3f9e/ep/maco/';
+        'https://www.magazineluiza.com.br/acabamento-estetico-blocktech-90o-40mm-para-o-ponto-da-maquina-de-lavar/p/ccaf59f837/ep/maco/';
       this.link_americanas = '';
     } else if (this.angulo === 1 && this.encaixe === 1 && this.diametro === 1) {
       this.link_mercadolivre =
